@@ -1,6 +1,15 @@
+h2 {
+  font-family: "Intro Demo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  color: #000000;
+}
+
 .root {
   min-width: 360px;
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-}/*# sourceMappingURL=app.css.map */
+}
