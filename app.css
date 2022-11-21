@@ -64,11 +64,61 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
-
   #burger,
-  [for=burger] {
+[for=burger] {
     display: none;
   }
+}
+h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #000000;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.about-me__block {
+  min-height: max-content;
+  display: grid;
+  grid-template-columns: 9.4vw [main-content-start] 1fr [main-content-end] 9.4vw;
+  font-family: "Jost";
+  font-style: normal;
+  padding: 10% 0 10% 0;
+}
+
+.about-me__container {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-column-start: main-content-start;
+  gap: 5%;
+}
+
+.about-me__articles {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10%;
+}
+
+.about-me__picture {
+  margin-top: 15%;
+  background-color: lightgray;
+}
+
+html {
+  max-width: 1600px;
+  min-width: 300px;
+  margin: 0 auto;
 }
 
 .root {
@@ -76,6 +126,4 @@ h2 {
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */

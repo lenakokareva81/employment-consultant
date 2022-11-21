@@ -1,13 +1,16 @@
-@import "_core.scss";
-@import "_header.scss";
-@import "_about_me.scss";
-@import "_question.scss";
-@import "_reviews.scss";
-@import "_for_whom_services.scss";
-@import "_footer.scss";
+@import "core.scss";
+@import "header.scss";
+@import "about_me.scss";
+@import "question.scss";
+@import "reviews.scss";
+@import "for_whom_services.scss";
+@import "footer.scss";
 
-
-
+html {
+    max-width: 1600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
 
 .root{
     min-width: 360px;
