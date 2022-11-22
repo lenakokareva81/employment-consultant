@@ -85,6 +85,127 @@
 
 
     <!--  Блок отзывы -->
+    <section class="reviews">
+		<div class="reviews__slideshow">
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__img" src="assets/img/photob.png" alt="photo">
+                        <div class="reviews__title">Отзыв 1</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__img" src="assets/img/photop.png" alt="photo">
+                        <div class="reviews__title">Отзыв 2</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__img" src="assets/img/photob.png" alt="photo">
+                        <div class="reviews__title">Отзыв 3</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__img" src="assets/img/photop.png" alt="photo">
+                        <div class="reviews__title">Отзыв 4</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__img" src="assets/img/photob.png" alt="photo">
+                        <div class="reviews__title">Отзыв 5</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__img" src="assets/img/photop.png" alt="photo">
+                        <div class="reviews__title">Отзыв 6</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
+            </div>
+            <a class="reviews__arrow reviews__prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="reviews__arrow reviews__next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="reviews__dots">
+            <span class="reviews__dot" onclick="currentSlide(1)"></span>
+            <span class="reviews__dot" onclick="currentSlide(2)"></span>
+            <span class="reviews__dot" onclick="currentSlide(3)"></span>
+            <span class="reviews__dot" onclick="currentSlide(4)"></span>
+            <span class="reviews__dot" onclick="currentSlide(5)"></span>
+            <span class="reviews__dot" onclick="currentSlide(6)"></span>
+        </div>
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);					
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }					
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }		
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("reviews__slides");
+            var dots = document.getElementsByClassName("reviews__dot");
+            if (n > slides.length) {slideIndex = 1 }    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        function backgroundSlide(n) {
+            var slides = document.getElementsByClassName("reviews__slides-text");
+            for(i = 0; i < slides.length; i++){
+                if(i % 2 != 0){
+                    slides[i].style.backgroundColor = "rgba(250, 52, 101, 0.7)"
+                }
+            }
+        }
+        backgroundSlide();
+    </script>
 
 
     <!--  Блок вопросы-->
