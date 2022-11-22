@@ -6,12 +6,13 @@ h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*outline: 1px solid #F93264;*/
 }
 
 .header {
     min-height: 747px;
     width: 100%;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.77)), url(assets/img/header/header-mobile.png);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
     background-size: cover;
     padding: 10%;
     display: grid;
@@ -42,8 +43,8 @@ h2 {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 116.5%;
+    font-size: 0.875em;
+    line-height: 1.5em;
     color: #00213C;
 }
 
@@ -55,8 +56,8 @@ h2 {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 11px;
-    line-height: 17px;
+    font-size: 0.6875em;
+    line-height: 1.2em;
     color: #FFFFFF;
     border: none;
     align-self: center;
@@ -76,8 +77,8 @@ h2 {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 116.5%;
+    font-size: 1.5em;
+    line-height: 1.4em;
     color: #00213C;
 }
 
@@ -85,8 +86,8 @@ h2 {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 0.9em;
+    line-height: 1.5em;
     color: #152836;
     padding-top: 58px;
 }
@@ -96,8 +97,8 @@ h2 {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 0.75em;
+    line-height: 1.2em;
     color: #595858;
     align-self: center;
     padding-left: 2vw;
@@ -106,11 +107,12 @@ h2 {
 .menu {
     display: block;
     position: fixed;
-    width: 30px;
+    width: 50px;
     text-align: center;
-    right: 20px;
-    top: 10px;
+    right: 25px;
+    top: 30px;
     grid-area: menu;
+    cursor: pointer;
 }
 
 #burger {
@@ -125,8 +127,8 @@ h2 {
     display: none;
     position: fixed;
     top: 0;
-    margin-top: 30px;
-    background: rgba(77, 225, 178, 0.85);
+    margin-top: 50px;
+    background: rgba(195, 250, 250, 0.5);
     width: 100%;
 }
 
@@ -153,7 +155,7 @@ h2 {
 @media screen and (min-width: 1024px) {
 
     .header {
-        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.77)), url(assets/img/header/header.png);
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
     }
 
     #burger,
