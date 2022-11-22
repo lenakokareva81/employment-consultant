@@ -2,6 +2,37 @@ h2 {
     @include font-style-intro(60px, #000000);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 747px;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.77)), url(assets/img/header/header-mobile.png);
+    background-size: cover;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 50vh 2fr;
+    grid-template-areas:
+        "logo menu"
+        "headline headline"
+        "action action";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.action {
+    grid-area: action;
+    display: flex;
+    justify-content: center;
+}
+
 .navigation__item {
     list-style-type: none;
 }
@@ -20,7 +51,7 @@ h2 {
 .action__service {
     width: 105px;
     height: 24px;
-    background: #9E9E9E;
+    background: #F93264;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
@@ -28,9 +59,20 @@ h2 {
     line-height: 17px;
     color: #FFFFFF;
     border: none;
+    align-self: center;
 }
 
-.header__text {
+.connection {
+    display: none;
+}
+
+.headline {
+    grid-area: headline;
+    text-align: center;
+    display: block;
+}
+
+.headline__text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
@@ -39,13 +81,14 @@ h2 {
     color: #00213C;
 }
 
-.header__description {
+.headline__description {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 19px;
     color: #152836;
+    padding-top: 58px;
 }
 
 .action__questionnaire {
@@ -56,12 +99,72 @@ h2 {
     font-size: 12px;
     line-height: 17px;
     color: #595858;
+    align-self: center;
+    padding-left: 2vw;
 }
+
+.menu {
+    display: block;
+    position: fixed;
+    width: 30px;
+    text-align: center;
+    right: 20px;
+    top: 10px;
+    grid-area: menu;
+}
+
+#burger {
+    display: none;
+}
+
+.menu::before {
+    content: '☰';
+}
+
+.navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 30px;
+    background: rgba(77, 225, 178, 0.85);
+    width: 100%;
+}
+
+#burger:checked+label+nav {
+    display: block;
+    animation: show .5s ease;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#burger:checked+.menu::before {
+    content: '×';
+}
+
 
 @media screen and (min-width: 1024px) {
 
+    .header {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.77)), url(assets/img/header/header.png);
+    }
+
     #burger,
-    [for=burger] {
+    .menu {
         display: none;
+    }
+
+    .navigation {
+        display: flex;
+        background: none;
+        position: static;
+        margin: 0;
     }
 }
