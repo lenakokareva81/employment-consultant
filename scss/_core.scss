@@ -14,3 +14,11 @@ color: $color_intro;
    line-height: 1.6;
    color: $color_Roboto;
 }
+@mixin font-style-Jost($fz_Jost, $color_Jost) {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: $fz_Jost;
+    line-height: 1.6;
+    color: $color_Jost;
+}

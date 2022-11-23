@@ -1,0 +1,21 @@
+@import "core.scss";
+@import "header.scss";
+@import "about_me.scss";
+@import "question.scss";
+@import "call-to-action.scss";
+@import "reviews.scss";
+@import "for_whom_services.scss";
+@import "footer.scss";
+
+html {
+    max-width: 1600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.root {
+    min-width: 360px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}

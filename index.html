@@ -1,50 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="scss/normalize.css">
+    <link rel="stylesheet" href="scss/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icons/icon-for-header.png" type="image/png">
+    <title>карьерное консультирование</title>
 </head>
 
 <body class="root">
-<!--  Блок herder   -->
+    <!--  Блок herder   -->
     <header>
-        <div class="logo">Placeholder</div>
-        <input type="checkbox" id="burger">
-        <label for="burger">☰</label>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__point" href="">Обо мне</a></li>
-                <li class="navigation__item"><a class="navigation__point" href="">Услуги</a></li>
-                <li class="navigation__item"><a class="navigation__point" href="">Отзывы</a></li>
-                <li class="navigation__item"><a class="navigation__point" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <button class="connection">Связаться со мной</button>
         <div class="header">
-            <h1 class="header__text">Карьерное консультирование для экспатов в Германии</h1>
-            <h2 class="header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus.</h2>
-        </div>
-        <div class="action">
-            <button class="action__service">Выбрать услугу</button>
-            <a class="action__questionnaire" href="">Заполнить анкету</a>
+            <div class="logo">Placeholder</div>
+            <input type="checkbox" id="burger">
+            <label class="menu" for="burger"></label>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__point" href="">Обо мне</a></li>
+                    <li class="navigation__item"><a class="navigation__point" href="">Услуги</a></li>
+                    <li class="navigation__item"><a class="navigation__point" href="">Отзывы</a></li>
+                    <li class="navigation__item"><a class="navigation__point" href="">Контакты</a></li>
+                </ul>
+                <button class="navigation__connection">Связаться со мной</button>
+            </nav>
+            <div class="headline">
+                <h1 class="headline__text">Карьерное консультирование для экспатов в Германии</h1>
+                <h2 class="headline__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum
+                    rhoncus.</h2>
+            </div>
+            <div class="action">
+                <button class="action__service">Выбрать услугу</button>
+                <a class="action__questionnaire" href="">Заполнить анкету</a>
+            </div>
         </div>
     </header>
 
-
-
-
     <!--  Блок обо мне   -->
     <section class="about-me__block">
+        <h2 class="about-me__about">Обо мне</h2>
         <div class="about-me__container">
             <div class="about-me__articles">
-                <div class="first-article"></div>
-                <div class="second-article"></div>
+                <div class="first-article">
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus. Auctor
+                        augue mauris augue neque. Amet venenatis urna cursus eget nunc scelerisque viverra. Sit amet
+                        porttitor eget dolor morbi. Eget nullam non nisi est. Dignissim sodales ut eu sem integer vitae.
+                        Imperdiet nulla malesuada pellentesque elit eget gravida cum. Aliquet nec ullamcorper sit amet
+                        risus nullam eget. Convallis a cras semper auctor neque vitae.</p>
+                </div>
+
+                <div class="second-article">
+                    <h2 class="about-me__why-me">Почему именно я?</h2>
+                    <p class="why-me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus. Auctor
+                        augue mauris augue neque. Amet venenatis urna cursus eget nunc scelerisque viverra. Sit amet
+                        porttitor eget dolor morbi. Eget nullam non nisi est. Dignissim sodales ut eu sem integer vitae.
+                        Imperdiet nulla malesuada pellentesque elit eget gravida cum. Aliquet nec ullamcorper sit amet
+                        risus nullam eget. Convallis a cras semper auctor neque vitae.</p>
+                </div>
             </div>
-            <div class="about-me__picture"></div>
+
+            <div class="about-me__picture-container">
+                <img class="about-me__picture" alt="my picture"
+                    src="assets/img/about-me/portrait-of-young-beautiful-brunette-businesswoman-smiling-posing 1.png">
+            </div>
         </div>
     </section>
 
@@ -57,16 +84,220 @@
 
 
     <!--  Блок пакеты услуг-->
-     <section>1</section>
 
+    <section class="advicesformats">
+        <h2 class="advicesformats__title">Форматы консультаций</h2>
+        <div class="advicesformats__container">
+            <div class="advicesformats__title">
+                <h2>Консультация по карьере</h2>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <a href="#" class="advicesformats__link-btn">Заказать</a>
+            </div>
+            <div class="advicesformats__title">
+                <h2>Подготовка резюме</h2>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <a href="#" class="advicesformats__link-btn">Заказать</a>
+            </div>
+            <div class="advicesformats__title">
+                <h2>Подготовка к собеседованию</h2>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <a href="#" class="advicesformats__link-btn">Заказать</a>
+            </div>
+            <div class="advicesformats__title">
+                <h2>Сопровождение в поиске работы</h2>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</з>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                <a href="#" class="advicesformats__link-btn">Заказать</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Блок call-to-action -->
+    <section class="call-to-action">
+        <h2 class="call-to-action__title">Если у вас есть вопросы или вы не знаете, какую консультацию выбрать</h2>
+        <p>Напишите мне, мы обсудим ваш запрос и спланируем дальнейшую работу</p>
+        <a href="http://">Написать в WhatsApp</a>
+        <a href="http://">Написать в Телеграм</a>
+    </section>
 
     <!--  Блок отзывы -->
+    <section class="reviews">
+        <h1 class="reviews__title">Отзывы о моей работе</h1>
+        <div class="reviews__slideshow">
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__slides-photo" src="assets/img/photob.png" alt="photo">
+                        <div class="reviews__slides-title">Отзыв 1</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
+                        sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__slides-photo" src="assets/img/photop.png" alt="photo">
+                        <div class="reviews__slides-title">Отзыв 2</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
+                        sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__slides-photo" src="assets/img/photob.png" alt="photo">
+                        <div class="reviews__slides-title">Отзыв 3</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
+                        sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__slides-photo" src="assets/img/photop.png" alt="photo">
+                        <div class="reviews__slides-title">Отзыв 4</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
+                        sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__slides-photo" src="assets/img/photob.png" alt="photo">
+                        <div class="reviews__slides-title">Отзыв 5</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
+                        sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
+            </div>
+            <div class="reviews__slides">
+                <div class="reviews__slides-text">
+                    <div class="reviews__line-top">
+                        <img class="reviews__slides-photo" src="assets/img/photop.png" alt="photo">
+                        <div class="reviews__slides-title">Отзыв 6</div>
+                    </div>
+                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
+                        sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
+            </div>
+            <a class="reviews__arrow reviews__prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="reviews__arrow reviews__next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="reviews__dots">
+            <span class="reviews__dot" onclick="currentSlide(1)"></span>
+            <span class="reviews__dot" onclick="currentSlide(2)"></span>
+            <span class="reviews__dot" onclick="currentSlide(3)"></span>
+            <span class="reviews__dot" onclick="currentSlide(4)"></span>
+            <span class="reviews__dot" onclick="currentSlide(5)"></span>
+            <span class="reviews__dot" onclick="currentSlide(6)"></span>
+        </div>
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("reviews__slides");
+            var dots = document.getElementsByClassName("reviews__dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+        function backgroundSlide(n) {
+            var slides = document.getElementsByClassName("reviews__slides-text");
+            for (i = 0; i < slides.length; i++) {
+                if (i % 2 != 0) {
+                    slides[i].style.backgroundColor = "rgba(250, 52, 101, 0.7)"
+                }
+            }
+        }
+        backgroundSlide();
+    </script>
 
 
     <!--  Блок вопросы-->
 
 
-
+    <!--  Блок сертификаты -->
+    <section class="certificates">
+        <h2 class="certificates__title">Мои сертификаты</h2>
+    </section>
     <!--  Блок футер -->
     <footer>
         <div class="footer-first">
