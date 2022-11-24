@@ -17,17 +17,32 @@ figcaption {
     padding-top: 2%;
 }
 
+.about-me__picture:hover {
+    cursor: pointer;
+}
+
+.about-me__block {
+    font-family: 'Open Sans';
+    min-height: max-content;
+    display: grid;
+}
+
+.picture-subtitle {
+    display: flex;
+    gap: 0.5vw;
+}
+
 @media screen and (min-width: 1024px) {
     .about-me__block {
         grid-template-columns: 200px [main-content-start] 1fr [main-content-end] 200px;
         margin: 3% 0 10% 0;
     }
 
-    .about-me__why-me {
+    .second-article__title {
         margin-bottom: 7%;
     }
     
-    .about-me__about {
+    .about-me__title {
         display: grid;
         grid-column-start: main-content-start;
         margin-bottom: 3%;
@@ -58,9 +73,12 @@ figcaption {
         max-width: 100%;
     }
 
-    .picture__subtext {
-        display: flex;
+    .picture-subtitle {
         justify-content: center;
+    }
+
+    .subtext-arrow {
+        max-width: 3vw;
     }
 }
 
@@ -69,11 +87,11 @@ figcaption {
         padding: 5% 10% 10% 10%;
     }
 
-    .about-me__why-me {
+    .second-article__title {
         margin-bottom: 3%;
     }
     
-    .about-me__about {
+    .about-me__title {
         display: grid;
         grid-column-start: main-content-start;
         margin-bottom: 3%;
@@ -112,10 +130,9 @@ figcaption {
     .picture__subtext {
         margin-left: 20%;
     }
-}
 
-.about-me__block {
-    font-family: 'Open Sans';
-    min-height: max-content;
-    display: grid;
+    .subtext-arrow {
+        max-width: 4vw;
+        margin-left: 0.5vw;
+    }
 }
