@@ -1,0 +1,26 @@
+@mixin font-style-intro($fz_intro, $color_intro) {
+    font-family: 'Intro Demo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fz_intro;
+    line-height: $fz_intro*1.5;
+    color: $color_intro;
+}
+
+@mixin font-style-Roboto($fz_Roboto, $color_Roboto) {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: $fz_Roboto;
+    line-height: 1.6;
+    color: $color_Roboto;
+}
+
+@mixin font-style-Jost($fz_Jost, $color_Jost) {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: $fz_Jost;
+    line-height: 1.6;
+    color: $color_Jost;
+}

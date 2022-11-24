@@ -1,0 +1,248 @@
+h2 {
+    @include font-style-intro(60px, #000000);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid #F93264;*/
+}
+
+.header {
+    min-height: 70vh;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
+    background-size: cover;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+        "logo menu"
+        "headline headline"
+        "action action";
+}
+
+.logo {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: #3D3D3D;
+    grid-area: logo;
+}
+
+.action {
+    grid-area: action;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__item {
+    list-style-type: none;
+    border: 1px solid #ffffff;
+}
+
+.navigation__point {
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    color: #00213C;
+    padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+
+.navigation__point:hover {
+    color: #F93264;
+}
+
+.navigation__connection,
+.action__service {
+    width: 115px;
+    height: 24px;
+    background: #F93264;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+}
+
+.navigation__connection:hover,
+.action__service:hover {
+    background: #00213C;
+}
+
+.navigation__connection {
+    display: none;
+}
+
+.headline {
+    grid-area: headline;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.headline__text {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 1.4em;
+    color: #00213C;
+    margin: 0;
+    align-content: stretch;
+}
+
+.headline__description {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #152836;
+}
+
+.action__questionnaire {
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1.2em;
+    color: #00213C;
+    align-self: center;
+    padding-left: 2vw;
+}
+
+.action__questionnaire:hover {
+    color: #F93264;
+}
+
+.menu {
+    display: block;
+    position: fixed;
+    width: 30px;
+    text-align: center;
+    right: 15px;
+    top: 30px;
+    grid-area: menu;
+    cursor: pointer;
+}
+
+#burger {
+    display: none;
+}
+
+.menu::before {
+    content: '☰';
+}
+
+.navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    margin-right: 40px;
+    background: rgba(221, 235, 249, 0.7);
+    width: 40%;
+    border: 1px solid #ffffff;
+}
+
+#burger:checked+label+nav {
+    display: block;
+    animation: show .5s ease;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#burger:checked+.menu::before {
+    content: '×';
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .header {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
+        padding: 60px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas:
+            "logo navigation navigation"
+            "headline headline headline"
+            "action action action";
+    }
+
+    #burger,
+    .menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        background: none;
+        position: static;
+        margin: 0;
+        grid-area: navigation;
+        width: 100%;
+        justify-content: flex-end;
+        border: none;
+        align-self: start;
+    }
+
+    .navigation__list {
+        display: flex;
+    }
+
+    .navigation__connection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headline__text {
+        width: 55vw;
+        font-size: 3.5em;
+        line-height: 1.4em;
+    }
+
+    .headline__description {
+        width: 45vw;
+        font-size: 1.5em;
+        line-height: 1.7em;
+    }
+
+    .navigation__point {
+        padding: 0;
+    }
+
+    .navigation__item {
+        display: flex;
+        align-items: flex-start;
+        padding-right: 40px;
+        border: none;
+    }
+}
