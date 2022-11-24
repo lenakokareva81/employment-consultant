@@ -1,0 +1,59 @@
+$text-color: #FFFFFF;
+
+.call-to-action {
+    background-image: url("call-to-action-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $text-color;
+
+    height: 16.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-family: 'Jost';
+}
+
+.call-to-action__title {
+    color: $text-color;
+    margin: 0;
+}
+
+.call-to-action__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+
+    margin-top: 30px;
+}
+
+.call-to-action__button {
+    display: block;
+
+    text-decoration: none;
+    padding: 10px;
+}
+
+.call-to-action__whatsapp-button {
+    background-color: #F93264;
+    color: $text-color;
+}
+
+.call-to-action__telegram-button {
+    background-color: $text-color;
+    color: #3D3D3D;
+}
+
+@media (max-width: 767px) {
+    .call-to-action {
+        height: 20em;
+    }
+
+    .call-to-action__buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

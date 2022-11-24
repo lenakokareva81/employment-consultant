@@ -1,23 +1,48 @@
 h2 {
-    @include font-style-Roboto(1.3vw, #000000);
+    @include font-style-Roboto(1.3rem, #000000);
     font-weight: 600;
 }
 
 p {
-    @include font-style-Roboto(1.1vw, #000000);
+    @include font-style-Roboto(1.1rem, #000000);
     font-weight: 100;
+}
+
+figcaption {
+    @include font-style-Roboto(0.8rem, grey);
+    font-weight: 600;
+}
+
+.picture__subtext {
+    padding-top: 2%;
+}
+
+.about-me__picture:hover {
+    cursor: pointer;
+}
+
+.about-me__block {
+    font-family: 'Open Sans';
+    min-height: max-content;
+    display: grid;
+}
+
+.picture-subtitle {
+    display: flex;
+    gap: 0.5vw;
 }
 
 @media screen and (min-width: 1024px) {
     .about-me__block {
-        margin: 10% 0 10% 0;
+        grid-template-columns: 200px [main-content-start] 1fr [main-content-end] 200px;
+        margin: 3% 0 10% 0;
     }
 
-    .about-me__why-me {
+    .second-article__title {
         margin-bottom: 7%;
     }
     
-    .about-me__about {
+    .about-me__title {
         display: grid;
         grid-column-start: main-content-start;
         margin-bottom: 3%;
@@ -25,6 +50,7 @@ p {
     
     .about-me__container {
         display: grid;
+        grid-column-start: main-content-start;
         grid-template-columns: 50% 40%;  
         gap: 7vw;
     }
@@ -46,22 +72,30 @@ p {
     .about-me__picture {
         max-width: 100%;
     }
+
+    .picture-subtitle {
+        justify-content: center;
+    }
+
+    .subtext-arrow {
+        max-width: 3vw;
+    }
 }
 
 @media screen and (max-width: 1023px) {  
     .about-me__block {
-        margin: 10% 0 10% 0;
+        padding: 5% 10% 10% 10%;
     }
 
-    .about-me__why-me {
+    .second-article__title {
         margin-bottom: 3%;
     }
     
-    .about-me__about {
+    .about-me__title {
         display: grid;
         grid-column-start: main-content-start;
         margin-bottom: 3%;
-        padding: 0 15vw 0 15vw;
+        padding: 0 15vw 0 12vw;
     }
 
     .about-me__container {
@@ -77,29 +111,28 @@ p {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         gap: 1vh;
-        padding: 0 15vw 0 15vw;
+        padding: 0 15vw 0 12vw;
     }
 
     .about-me__picture-container {
         grid-area: picture;
         max-width: 100%;
+        margin-left: 20%;
     
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
     }
     
     .about-me__picture {
-        max-width: 40%;
+        max-width: 70%;
     }
-}
 
-.about-me__block {
-    font-family: 'Open Sans';
-    min-height: max-content;
-    display: grid;
-    grid-template-columns: 200px [main-content-start] 1fr [main-content-end] 200px;
-}
+    .picture__subtext {
+        margin-left: 20%;
+    }
 
-.about-me__container {
-    grid-column-start: main-content-start;
+    .subtext-arrow {
+        max-width: 4vw;
+        margin-left: 0.5vw;
+    }
 }
