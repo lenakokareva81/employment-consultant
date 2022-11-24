@@ -1,0 +1,173 @@
+.work__name {
+    @include font-style-Jost(32px, #3D3D3D);
+    font-weight: 500;
+}
+
+.work__text {
+    @include font-style-Jost(24px, #3D3D3D);
+    font-weight: 400;
+}
+
+.work__point-a {
+    @include font-style-Jost(48px, #4DE1B2);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+    .work {
+        display: grid;
+        grid-template-rows: 200px 1fr;
+        grid-template-columns: 10.4vw [work-content-start] 1fr [work-content-end] 10.4vw;
+    }
+
+    .work__title {
+        grid-column-start: work-content-start;
+        align-self: center;
+        @include font-style-Jost(38px, #3D3D3D);
+        font-weight: 600;
+    }
+
+    .work__container {
+        grid-column-start: work-content-start;
+        display: grid;
+        grid-template-rows: [apply-name-start] max-content [apply-text-start] max-content [consult-name-start] max-content [consult-text-start] max-content [search-name-start] max-content [search-text-start] max-content [support-name-start] max-content [support-text-start] max-content [result-name-start] 100px [result-text-start] max-content [work-content-end];
+        grid-template-columns: [work-left-start] 1fr [work-center-start] 250px [work-right-start] 1fr;
+    }
+
+    .work__point-a {
+        grid-row-start: apply-name-start;
+        grid-column-start: work-right-start;
+    }
+
+    .work__name,
+    .work__point-a {
+        align-self: center;
+    }
+
+    .work__text {
+        padding-bottom: 100px;
+    }
+
+    .work__circle-1 {
+        grid-row-start: apply-name-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+    }
+
+    .work__line-1 {
+        grid-row-start: apply-text-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+        width: 5px;
+        background-color: #A4FDE1;
+    }
+
+    .work__apply-name,
+    .work__apply-text,
+    .work__search-name,
+    .work__search-text,
+    .work__result-name,
+    .work__result-text {
+        text-align: end;
+    }
+
+    .work__circle-2 {
+        grid-row-start: consult-name-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+    }
+
+    .work__line-2 {
+        grid-row-start: consult-text-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+        width: 5px;
+        background-color: #A4FDE1;
+    }
+
+    .work__consult-name {
+        grid-row-start: consult-name-start;
+        grid-column-start: work-right-start;
+    }
+
+    .work__consult-text {
+        grid-row-start: consult-text-start;
+        grid-column-start: work-right-start;
+    }
+
+    .work__circle-3 {
+        grid-row-start: search-name-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+    }
+
+    .work__search-name {
+        grid-row-start: search-name-start;
+        grid-column-start: work-left-start;
+    }
+
+    .work__search-text {
+        grid-row-start: search-text-start;
+        grid-column-start: work-left-start;
+    }
+
+    .work__line-3 {
+        grid-row-start: search-text-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+        width: 5px;
+        background-color: #A4FDE1;
+    }
+
+    .work__circle-4 {
+        grid-row-start: support-name-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+    }
+
+    .work__support-name {
+        grid-row-start: support-name-start;
+        grid-column-start: work-right-start;
+    }
+
+    .work__support-text {
+        grid-row-start: support-text-start;
+        grid-column-start: work-right-start;
+    }
+
+    .work__line-4 {
+        grid-row-start: support-text-start;
+        grid-column-start: work-center-start;
+        justify-self: center;
+        width: 5px;
+        background-color: #A4FDE1;
+    }
+
+    .work__circle-5 {
+        grid-row-start: result-name-start;
+        grid-row-end: work-content-end;
+        grid-column-start: work-center-start;
+        justify-self: center;
+    }
+
+    .work__result-name {
+        grid-row-start: result-name-start;
+        grid-column-start: work-left-start;
+        margin-right: 70px;
+    }
+
+    .work__result-text {
+        grid-row-start: result-text-start;
+        grid-column-start: work-left-start;
+        margin-right: 70px;
+    }
+
+    .work__point-b {
+        grid-row-start: result-name-start;
+        grid-row-end: work-content-end;
+        grid-column-start: work-right-start;
+        margin-top: 55px;
+        @include font-style-Jost(48px, #F93264);
+        font-weight: 600;
+    }
+}
