@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="assets/icons/icon-for-header.png" type="image/png">
+    <script src="https://kit.fontawesome.com/42328a031c.js" crossorigin="anonymous"></script>
     <title>карьерное консультирование</title>
 </head>
 
@@ -46,6 +47,7 @@
 
     <!--  Блок обо мне   -->
     <section class="about-me__block">
+        <a id="top1"></a>
         <h2 class="about-me__title">Обо мне</h2>
         <div class="about-me__container">
             <div class="about-me__articles">
@@ -92,31 +94,31 @@
         <h2 class="work__title">Как проходит наша работа?</h2>
         <div class="work__container">
             <p class="work__point-a">Точка А</p>
-            <img class="work__circle-1" src="assets/img/work/circle-1.svg" alt="1">
-            <div class="work__line-1"></div>
+            <img class="work__img work__circle-1" src="assets/img/work/circle-1.svg" alt="1">
+            <div class="work__line work__line-1"></div>
             <p class="work__name work__apply-name">Заявка и анкетирование</p>
             <p class="work__text work__apply-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
                 eget mi proin sed libero enim sed faucibus turpis.</p>
-            <img class="work__circle-2" src="assets/img/work/circle-2.svg" alt="2">
+            <img class="work__img work__circle-2" src="assets/img/work/circle-2.svg" alt="2">
             <p class="work__name work__consult-name">Консультация</p>
             <p class="work__text work__consult-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
                 eget mi proin sed libero enim sed faucibus turpis.</p>
-            <div class="work__line-2"></div>
-            <img class="work__circle-3" src="assets/img/work/circle-3.svg" alt="3">
+            <div class="work__line work__line-2"></div>
+            <img class="work__img work__circle-3" src="assets/img/work/circle-3.svg" alt="3">
             <p class="work__name work__search-name">Поиск работы</p>
             <p class="work__text work__search-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
                 eget mi proin sed libero enim sed faucibus turpis.</p>
-            <div class="work__line-3"></div>
-            <img class="work__circle-4" src="assets/img/work/circle-4.svg" alt="4">
+            <div class="work__line work__line-3"></div>
+            <img class="work__img work__circle-4" src="assets/img/work/circle-4.svg" alt="4">
             <p class="work__name work__support-name">Сопровождение и поддержка</p>
             <p class="work__text work__support-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
                 eget mi proin sed libero enim sed faucibus turpis.</p>
-            <div class="work__line-4"></div>
-            <img class="work__circle-5" src="assets/img/work/circle-5.svg" alt="5">
+            <div class="work__line work__line-4"></div>
+            <img class="work__img work__circle-5" src="assets/img/work/circle-5.svg" alt="5">
             <p class="work__name work__result-name">Достижение результата</p>
             <p class="work__text work__result-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
@@ -127,64 +129,50 @@
 
 
     <!--  Блок пакеты услуг-->
+    <!--
 
     <section class="advicesformats">
+        <a id="top2"></a>
         <h2 class="advicesformats__title">Форматы консультаций</h2>
-        <div class="advicesformats__container">
-            <div class="advicesformats__title">
-                <h2>Консультация по карьере</h2>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <a href="#" class="advicesformats__link-btn">Заказать</a>
+            <div class="advicesformats__container">
+                <div class="advicesformats__format--first">
+                    <h2 class="advicesformats__subtitle">Консультация по карьере</h2>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <a href="#" class="advicesformats__link-btn">Заказать</a>
+                </div>
+                <div class="advicesformats__format--second">
+                    <h2 class="advicesformats__subtitle">Подготовка резюме</h2>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <a href="#" class="advicesformats__link-btn">Заказать</a>
+                </div>
+                <div class="advicesformats__format--third">
+                    <h2 class="advicesformats__subtitle">Подготовка к собеседованию</h2>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <a href="#" class="advicesformats__link-btn">Заказать</a>
+                </div>
+                <div class="advicesformats__format--fourth">
+                    <h2 class="advicesformats__subtitle">Сопровождение в поиске работы</h2>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</з>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
+                    <a href="#" class="advicesformats__link-btn">Заказать</a>
+                </div>
             </div>
-            <div class="advicesformats__title">
-                <h2>Подготовка резюме</h2>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <a href="#" class="advicesformats__link-btn">Заказать</a>
-            </div>
-            <div class="advicesformats__title">
-                <h2>Подготовка к собеседованию</h2>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <a href="#" class="advicesformats__link-btn">Заказать</a>
-            </div>
-            <div class="advicesformats__title">
-                <h2>Сопровождение в поиске работы</h2>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</з>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.</p>
-                <a href="#" class="advicesformats__link-btn">Заказать</a>
-            </div>
-        </div>
-    </section>
-
-
+     </section>
+-->
     <!-- Блок call-to-action -->
     <section class="call-to-action">
+        <a id="top4"></a>
         <h2 class="call-to-action__title">Если у вас есть вопросы или вы не знаете, какую</h2>
         <h2 class="call-to-action__title">консультацию выбрать</h2>
         <p class="call-to-action__paragraph">Напишите мне, мы обсудим ваш запрос и спланируем дальнейшую работу</p>
@@ -194,22 +182,25 @@
         </div>
     </section>
 
+
     <!--  Блок отзывы -->
-    <section class="reviews">
+    <section id="reviews">
+        <a id="top3"></a>
+
         <h1 class="reviews__title">Отзывы о моей работе</h1>
         <div class="reviews__slideshow">
             <div class="reviews__slides">
                 <div class="reviews__slides-text">
                     <div class="reviews__line-top">
                         <img class="reviews__slides-photo" src="assets/img/photob.png" alt="photo">
-                        <div class="reviews__slides-title">Отзыв 1</div>
+                        <p class="reviews__slides-title">Отзыв 1</p>
                     </div>
-                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
                         sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </div>
+                    </p>
                 </div>
                 <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
             </div>
@@ -217,14 +208,14 @@
                 <div class="reviews__slides-text">
                     <div class="reviews__line-top">
                         <img class="reviews__slides-photo" src="assets/img/photop.png" alt="photo">
-                        <div class="reviews__slides-title">Отзыв 2</div>
+                        <p class="reviews__slides-title">Отзыв 2</p>
                     </div>
-                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
                         sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </div>
+                    </p>
                 </div>
                 <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
             </div>
@@ -232,14 +223,14 @@
                 <div class="reviews__slides-text">
                     <div class="reviews__line-top">
                         <img class="reviews__slides-photo" src="assets/img/photob.png" alt="photo">
-                        <div class="reviews__slides-title">Отзыв 3</div>
+                        <p class="reviews__slides-title">Отзыв 3</p>
                     </div>
-                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
                         sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </div>
+                    </p>
                 </div>
                 <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
             </div>
@@ -247,14 +238,14 @@
                 <div class="reviews__slides-text">
                     <div class="reviews__line-top">
                         <img class="reviews__slides-photo" src="assets/img/photop.png" alt="photo">
-                        <div class="reviews__slides-title">Отзыв 4</div>
+                        <p class="reviews__slides-title">Отзыв 4</p>
                     </div>
-                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
                         sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </div>
+                    </p>
                 </div>
                 <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
             </div>
@@ -262,14 +253,14 @@
                 <div class="reviews__slides-text">
                     <div class="reviews__line-top">
                         <img class="reviews__slides-photo" src="assets/img/photob.png" alt="photo">
-                        <div class="reviews__slides-title">Отзыв 5</div>
+                        <p class="reviews__slides-title">Отзыв 5</p>
                     </div>
-                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
                         sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </div>
+                    </p>
                 </div>
                 <img class="reviews__slides-triangle" src="assets/img/triangle_blue.png" alt="triangle_blue">
             </div>
@@ -277,14 +268,14 @@
                 <div class="reviews__slides-text">
                     <div class="reviews__line-top">
                         <img class="reviews__slides-photo" src="assets/img/photop.png" alt="photo">
-                        <div class="reviews__slides-title">Отзыв 6</div>
+                        <p class="reviews__slides-title">Отзыв 6</p>
                     </div>
-                    <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci
                         sagittis eu volutpat odio. Et netus et malesuada fames ac turpis egestas.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </div>
+                    </p>
                 </div>
                 <img class="reviews__slides-triangle" src="assets/img/triangle_pink.png" alt="triangle_pink">
             </div>
@@ -314,8 +305,12 @@
             var i;
             var slides = document.getElementsByClassName("reviews__slides");
             var dots = document.getElementsByClassName("reviews__dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
+            if (n > slides.length) { 
+                slideIndex = 1; 
+            }
+            if (n < 1) { 
+                slideIndex = slides.length; 
+            }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
@@ -329,7 +324,7 @@
             var slides = document.getElementsByClassName("reviews__slides-text");
             for (i = 0; i < slides.length; i++) {
                 if (i % 2 != 0) {
-                    slides[i].style.backgroundColor = "rgba(250, 52, 101, 0.7)"
+                    slides[i].style.backgroundColor = "rgba(250, 52, 101, 0.7)";
                 }
             }
         }
@@ -340,10 +335,16 @@
     <!--  Блок вопросы-->
 
 
-    <!--  Блок сертификаты -->
-    <section class="certificates">
+     <!-- Блок сертификаты -->  
+<!--
+    <section class="certificates">  
         <h2 class="certificates__title">Мои сертификаты</h2>
+        <div class="certificates__img">
+            <div><img class="certificates__img--one" src="assets/img/section_certificates_img.png" alt="Certificate_image_1"></div>
+            <div><img class="certificates__img--two" src="assets/img/section_certificates_img.png" alt="Certificate_image_2"></div>
+        </div>
     </section>
+-->
     <!--  Блок футер -->
     <footer>
         <div class="footer-first">
@@ -352,63 +353,64 @@
                     Placeholder
                 </div>
 
-                <div class="number1">
-                    +7 (921) 430 32 35
+                <div class = "number1">
+                    <a href="tel:+79214303235"> +7 (921) 430 32 35</a>
                 </div>
 
-                <div class="mail">
-                    e-mail: какой-то@gmail
+                <div class = "mail">
+                    <a href="mailto:какой-то@gmail">e-mail: какой-то@gmail</a> 
                 </div>
             </div>
 
             <div class="social-net">
-                <img class="whatsapp" src="assets/img/footer/w1.png" alt="">
-                <img class="telegram" src="assets/img/footer/t1.png" alt="">
-            </div>
+                <a href="https://wa.me/79200000000" class="social-net__whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-5x"></i>
+                </a>
+                
+                <a href="https://t.me/USERNAME" class="social-net__telegram">
+                    <i class="fa-brands fa-telegram fa-5x"></i>
+                </a>
+            </div> 
+
             <div class="white-block">
             </div>
         </div>
 
+    <div class="footer-second">
 
-        <div class="footer-second">
-
-            <div class="logotype">
-                Placeholder
-            </div>
-
-            <div class="policy">
-                <a href="#">Политика конфиденциальности</a>
-            </div>
-
-            <div class="about-me">
-                <a href="#">Обо мне</a>
-            </div>
-
-            <div class="services">
-                <a href="#">Услуги</a>
-            </div>
-
-            <div class="responces">
-                <a href="#">Отзывы</a>
-            </div>
-
-            <div class="contacts">
-                <a href="#">Контакты</a>
-            </div>
-
-            <button class="link">
-                <a href="#">Связаться со мной</a>
-            </button>
-
-            <div class="number">
-                <a href="#">+7 (921) 430 32 35</a>
-            </div>
-
+        <div class="logotype">
+            Placeholder
         </div>
-    </footer>
 
+        <div class="policy">
+            <a href="#">Политика конфиденциальности</a>
+        </div>
 
+        <div class="about-me">
+            <a href="index.html#top1">Обо мне</a>
+        </div>
+
+        <div class="services">
+            <a href="index.html#top2">Услуги</a>
+        </div>
+
+        <div class="responces">
+            <a href="index.html#top3">Отзывы</a>
+        </div>
+
+        <div class="contacts">
+            <a href="index.html#top4">Контакты</a>
+        </div>
+
+        <button class="link">
+            <a id="link_button" href="index.html#top4">Связаться со мной</a>
+        </button>     
+
+        <div class="number">
+            <a href="tel:+79214303235">+7 (921) 430 32 35</a>
+        </div>
+    </div>
+</footer>
 
 </body>
-
 </html>
