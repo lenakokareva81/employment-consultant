@@ -1,19 +1,10 @@
-h2 {
-    @include font-style-intro(60px, #000000);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*outline: 1px solid #F93264;*/
 }
 
 .header {
-    min-height: 70vh;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
-    background-size: cover;
-    padding: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
@@ -21,16 +12,20 @@ h2 {
         "logo menu"
         "headline headline"
         "action action";
+    min-height: 70vh;
+    padding: 10%;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
+    background-size: cover;
 }
 
 .logo {
+    grid-area: logo;
     font-family: 'Jost', sans-serif;
     font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 17px;
+    font-weight: 500;
     color: #3D3D3D;
-    grid-area: logo;
 }
 
 .action {
@@ -40,22 +35,22 @@ h2 {
 }
 
 .navigation__item {
-    list-style-type: none;
     border: 1px solid #ffffff;
+    list-style-type: none;
 }
 
 .navigation__point {
-    text-decoration: none;
-    font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.9em;
-    line-height: 1.3em;
-    color: #00213C;
-    padding-right: 25px;
     display: flex;
     justify-content: flex-end;
     align-self: center;
+    padding-right: 25px;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    font-weight: 600;
+    color: #00213C;
+    text-decoration: none;
 }
 
 
@@ -67,15 +62,15 @@ h2 {
 .action__service {
     width: 115px;
     height: 24px;
-    background: #F93264;
+    align-self: center;
     font-family: 'Jost', sans-serif;
     font-style: normal;
-    font-weight: 500;
     font-size: 0.75em;
     line-height: 1.2em;
+    font-weight: 500;
     color: #FFFFFF;
+    background: #F93264;
     border: none;
-    align-self: center;
     cursor: pointer;
 }
 
@@ -97,35 +92,35 @@ h2 {
 }
 
 .headline__text {
-    font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8em;
-    line-height: 1.4em;
-    color: #00213C;
     margin: 0;
     align-content: stretch;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-size: 1.8em;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: #00213C;
 }
 
 .headline__description {
     font-family: 'Jost', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 0.9em;
     line-height: 1.5em;
+    font-weight: 400;
     color: #152836;
 }
 
 .action__questionnaire {
-    text-decoration: none;
+    padding-left: 2vw;
+    align-self: center;
     font-family: 'Jost', sans-serif;
     font-style: normal;
-    font-weight: 500;
     font-size: 0.75em;
     line-height: 1.2em;
+    font-weight: 500;
     color: #00213C;
-    align-self: center;
-    padding-left: 2vw;
+    text-decoration: none;
 }
 
 .action__questionnaire:hover {
@@ -133,13 +128,13 @@ h2 {
 }
 
 .menu {
-    display: block;
     position: fixed;
+    top: 30px;
+    right: 15px;
+    grid-area: menu;
+    display: block;
     width: 30px;
     text-align: center;
-    right: 15px;
-    top: 30px;
-    grid-area: menu;
     cursor: pointer;
 }
 
@@ -152,14 +147,14 @@ h2 {
 }
 
 .navigation {
-    display: none;
     position: fixed;
     top: 0;
     right: 0;
+    display: none;
     margin-top: 50px;
     margin-right: 40px;
-    background: rgba(221, 235, 249, 0.7);
     width: 40%;
+    background: rgba(221, 235, 249, 0.7);
     border: 1px solid #ffffff;
 }
 
@@ -186,7 +181,6 @@ h2 {
 @media screen and (min-width: 1024px) {
 
     .header {
-        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
         padding: 60px 200px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 3fr 1fr;
@@ -194,6 +188,7 @@ h2 {
             "logo navigation navigation"
             "headline headline headline"
             "action action action";
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
     }
 
     #burger,
@@ -202,15 +197,15 @@ h2 {
     }
 
     .navigation {
-        display: flex;
-        background: none;
         position: static;
-        margin: 0;
         grid-area: navigation;
+        display: flex;
         width: 100%;
+        margin: 0;
         justify-content: flex-end;
-        border: none;
         align-self: start;
+        background: none;
+        border: none;
     }
 
     .navigation__list {
