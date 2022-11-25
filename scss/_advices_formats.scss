@@ -100,8 +100,10 @@
     .advicesformats__container {
         grid-column-start: main-content-start;
         display: grid;
-        grid-template-areas: "first second"
-                             "third fourth";
+        grid-template-areas: "first"
+                             "second"
+                             "third"
+                             "fourth";
         gap: 100px;
         margin-bottom: 200px;
         min-height: max-content;
