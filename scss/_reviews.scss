@@ -90,9 +90,11 @@
         margin: 0 10%;
     }
     .reviews__prev{
-        left: 10%;
+        grid-column-start: reviews-content-start;
+        left: 1%;
     }
     .reviews__next{
-        right: 10%;
+        grid-column-end: reviews-content-end;
+        right: 1%;
     }
 }
