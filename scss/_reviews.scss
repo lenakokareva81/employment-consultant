@@ -1,4 +1,4 @@
-.reviews{
+#reviews{
     padding: 0;
     position: relative;
     display: grid;
@@ -17,7 +17,6 @@
     align-items: center;
 }
 .reviews__slides-text {
-    @include font-style-Jost(1.2em, #fff);
     line-height: 32px;
     background: rgba(76, 200, 172, 0.7);
     width: 100%;
@@ -49,6 +48,7 @@
     min-width: 150px;
 }
 .reviews__text{
+    @include font-style-Jost(1.2em, #fff);
     grid-area: reviews__text;
     margin: 35px;
 }
