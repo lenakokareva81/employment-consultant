@@ -1,3 +1,6 @@
+footer{
+    margin-top:10%;
+}
 .footer-first{
     background-color: #4DE1B2;
     height: 370px;
@@ -55,12 +58,6 @@
     font-size: 2em;
     line-height: 46px;
     color: #FFFFFF;
-}
-.social-net__mobile-whatsapp{
-    display:none;
-}
-.social-net__mobile-telegram{
-    display:none;
 }
 
 .white-block{
@@ -197,6 +194,8 @@
     width:155px;
     height:30px;
     text-align: center;
+    align-self: center;
+    padding-top:2.5px;
     margin-left: 45%;
     font-family: 'Jost';
     font-size: 1.06em;
@@ -223,10 +222,23 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.06em;
+    font-size: 1em;
     line-height: 25px;
     color: #3D3D3D;
 }
+
+@media(max-width:1222px){
+    .number{
+        font-size:0.8em;
+    }
+}
+@media(max-width:1068px){
+    .number{
+        width:150px;
+        font-size:0.8em;
+    }
+}
+
 
 @media(max-width:1024px){
     .about-me{
@@ -305,9 +317,8 @@
         width:155px;
         height:30px;
         margin-left:20%;   
-        font-size: 1em;
+        font-size: 0.8em;
         line-height: 14px;
-        border:1px solid black;
     }
 
     @media(max-width:767px){
@@ -334,15 +345,21 @@
             font-size: 1em;
             line-height: 17px;
         }
-       .social-net{
-            flex-direction:column;
-        } 
-        
-        .social-net i{
-            flex-direction:column;
-            margin:0;
-        }
 
+        .social-net{
+            display:inline-block;
+            margin-top:40px;
+            margin-left:10%;
+        } 
+
+        .social-net i{
+            display:block;
+            margin:0;
+            font-size:2em;
+            width:60px;
+            height: 60px;
+        }
+        
         .white-block{
             position: absolute; 
             width: 28.49px;
@@ -414,7 +431,7 @@
 
         .contacts{
             grid-area:contacts;
-            margin-left:40%;
+            margin-left:42%;
             width:120px;
             text-align: center;
             font-weight: 500;
@@ -439,12 +456,36 @@
             line-height: 17px;
         }
     }
+    @media(max-width:720px){
+        .responces{
+            margin-left:37%;
+        }
+        .contacts{
+            margin-left:39.5%;
+        }
+    }
+    @media(max-width:656px){
+        .responces{
+            margin-left:35%;
+        }
+        .contacts{
+            margin-left:37%;
+        }
+    }
+    @media(max-width:640px){
+        .responces{
+            margin-left:33.5%;
+        }
+        .contacts{
+            margin-left:35%;
+        }
+    }
     @media(max-width:559px){
         .responces{
-            margin-left:30%;
+            margin-left:32%;
         } 
         .contacts{
-            margin-left:31%;
+            margin-left:33.5%;
         }
         .link, 
         .number{
@@ -464,10 +505,12 @@
             margin-left:10%;
         }
         .responces{
-            margin-left:8%;
+            margin-left:26.5%;
+            width:60px;
         } 
         .contacts{
-            margin-left:8%;
+            margin-left:28%;
+            width:62px;
         }
         .link, 
         .number{
@@ -482,50 +525,75 @@
         }
 
 
-        .about-me, .services, 
-        .responces, .contacts{
+        .about-me, .services{
             margin-left:-10%; 
             width:100px;
+        }
+        
+        .responces{
+            margin-left:7%;
+            width:60px;
+        } 
+        
+        .contacts{
+            margin-left:9%;
+            width:60px;
         }
         .link, 
         .number{
             margin-left:0%;
         }
     }
-
-     @media(max-width:410px){
-        .about-me, .services, 
-        .responces, .contacts{
-            margin-left:-20%; 
+    @media(max-width:410px){
+        .policy{
+            font-size:0.5em;
+        }
+        .about-me, .services{
+            margin-left:7%; 
+        }
+        .responces{
+            margin-left:25.5%;
+        }
+        .contacts{
+            margin-left:28%;
         }
         .link, 
         .number{
-            margin-left:-20%;
+            margin-left:20%;
         }     
 }
     @media(max-width:380px){
         .link-details >div{
             width:150px;
             font-size: 0.7em;
-        }
-        
+        } 
     .logotype{
         font-size: 0.6em;
 }
     .policy{
     font-size:0.4em;
 }
-        .about-me, .services, 
-        .responces, .contacts{
+        .about-me, .services{
             width:90px;
             font-size:0.6em;
             margin-left:20%; 
+        }
+        .responces{
+            width:45px;
+            font-size:0.6em;
+            margin-left:38%;
+
+        } 
+        .contacts{
+            width:45px;
+            font-size:0.6em;
+            margin-left:40%;
         }
         .link, 
         .number{
             width:90px;
             font-size:0.6em;
-            margin-left:40%;
+            margin-left:55%;
         }     
     }
 }
