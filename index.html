@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="scss/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="assets/icons/icon-for-header.png" type="image/png">
     <script src="https://kit.fontawesome.com/42328a031c.js" crossorigin="anonymous"></script>
     <title>карьерное консультирование</title>
 </head>
 
 <body class="root">
-    <!--  Блок herder   -->
+    <!--  Блок header   -->
     <header>
         <div class="header">
             <div class="logo">Placeholder</div>
@@ -46,11 +47,12 @@
 
     <!--  Блок обо мне   -->
     <section class="about-me__block">
-        <h2 class="about-me__about">Обо мне</h2>
+        <h2 class="about-me__title">Обо мне</h2>
         <div class="about-me__container">
             <div class="about-me__articles">
                 <div class="first-article">
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="first-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus. Auctor
                         augue mauris augue neque. Amet venenatis urna cursus eget nunc scelerisque viverra. Sit amet
                         porttitor eget dolor morbi. Eget nullam non nisi est. Dignissim sodales ut eu sem integer vitae.
@@ -59,8 +61,9 @@
                 </div>
 
                 <div class="second-article">
-                    <h2 class="about-me__why-me">Почему именно я?</h2>
-                    <p class="why-me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <h2 class="second-article__title">Почему именно я?</h2>
+                    <p class="second-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus. Auctor
                         augue mauris augue neque. Amet venenatis urna cursus eget nunc scelerisque viverra. Sit amet
                         porttitor eget dolor morbi. Eget nullam non nisi est. Dignissim sodales ut eu sem integer vitae.
@@ -69,19 +72,59 @@
                 </div>
             </div>
 
-            <div class="about-me__picture-container">
-                <img class="about-me__picture" alt="my picture"
-                    src="assets/img/about-me/portrait-of-young-beautiful-brunette-businesswoman-smiling-posing 1.png">
-            </div>
+            <figure class="about-me__picture-container">
+                <a href="#"><img class="about-me__picture" alt="my picture" src="assets/img/about-me/about-pic.png"></a>
+                <div class="picture-subtitle">
+                    <figcaption class="picture__subtext">Нажмите на фото</figcaption>
+                    <img class="subtext-arrow" alt="arrow" src="assets/img/about-me/Arrow.png">
+                </div>
+
+            </figure>
         </div>
     </section>
 
 
-    <!--  Блок с тремя кружочками  -->
-
-
     <!--  Блок кому подойдут мои услуги -->
 
+
+
+    <!--  Блок как проходит наша работа  -->
+    <section class="work">
+        <h2 class="work__title">Как проходит наша работа?</h2>
+        <div class="work__container">
+            <p class="work__point-a">Точка А</p>
+            <img class="work__circle-1" src="assets/img/work/circle-1.svg" alt="1">
+            <div class="work__line-1"></div>
+            <p class="work__name work__apply-name">Заявка и анкетирование</p>
+            <p class="work__text work__apply-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
+                eget mi proin sed libero enim sed faucibus turpis.</p>
+            <img class="work__circle-2" src="assets/img/work/circle-2.svg" alt="2">
+            <p class="work__name work__consult-name">Консультация</p>
+            <p class="work__text work__consult-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
+                eget mi proin sed libero enim sed faucibus turpis.</p>
+            <div class="work__line-2"></div>
+            <img class="work__circle-3" src="assets/img/work/circle-3.svg" alt="3">
+            <p class="work__name work__search-name">Поиск работы</p>
+            <p class="work__text work__search-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
+                eget mi proin sed libero enim sed faucibus turpis.</p>
+            <div class="work__line-3"></div>
+            <img class="work__circle-4" src="assets/img/work/circle-4.svg" alt="4">
+            <p class="work__name work__support-name">Сопровождение и поддержка</p>
+            <p class="work__text work__support-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
+                eget mi proin sed libero enim sed faucibus turpis.</p>
+            <div class="work__line-4"></div>
+            <img class="work__circle-5" src="assets/img/work/circle-5.svg" alt="5">
+            <p class="work__name work__result-name">Достижение результата</p>
+            <p class="work__text work__result-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales. Sapien
+                eget mi proin sed libero enim sed faucibus turpis.</p>
+            <p class="work__point-b">Точка Б</p>
+        </div>
+    </section>
 
 
     <!--  Блок пакеты услуг-->
@@ -143,10 +186,13 @@
 
     <!-- Блок call-to-action -->
     <section class="call-to-action">
-        <h2 class="call-to-action__title">Если у вас есть вопросы или вы не знаете, какую консультацию выбрать</h2>
-        <p>Напишите мне, мы обсудим ваш запрос и спланируем дальнейшую работу</p>
-        <a href="http://">Написать в WhatsApp</a>
-        <a href="http://">Написать в Телеграм</a>
+        <h2 class="call-to-action__title">Если у вас есть вопросы или вы не знаете, какую</h2>
+        <h2 class="call-to-action__title">консультацию выбрать</h2>
+        <p class="call-to-action__paragraph">Напишите мне, мы обсудим ваш запрос и спланируем дальнейшую работу</p>
+        <div class="call-to-action__buttons">
+            <a href="#" class="call-to-action__button call-to-action__whatsapp-button">Написать в WhatsApp</a>
+            <a href="#" class="call-to-action__button call-to-action__telegram-button">Написать в Телеграм</a>
+        </div>
     </section>
 
     <!--  Блок отзывы -->
@@ -303,7 +349,7 @@
     <footer>
         <div class="footer-first">
             <div class="link-details">
-                <div class = "logotype1">
+                <div class="logotype1">
                     Placeholder
                 </div>
 
@@ -313,10 +359,12 @@
 
                 <div class = "mail">
                     <a href="#">e-mail: какой-то@gmail</a> 
+
                 </div>
             </div>
 
             <div class="social-net">
+
                 <a href="#" class="social-net__whatsapp">
                     <i class="fa-brands fa-whatsapp fa-5x"></i>
                 </a>
@@ -328,11 +376,17 @@
 
                 <div class="white-block">
                 </div>
+                <img class="whatsapp" src="assets/img/footer/w1.png" alt="">
+                <img class="telegram" src="assets/img/footer/t1.png" alt="">
+            </div>
+            <div class="white-block">
+            </div>
+
         </div>
 
-        
+
         <div class="footer-second">
-            
+
             <div class="logotype">
                 Placeholder
             </div>
@@ -342,30 +396,32 @@
             </div>
 
             <div class="about-me">
-                <a  href="#">Обо мне</a>
+                <a href="#">Обо мне</a>
             </div>
-            
+
             <div class="services">
-                <a  href="#">Услуги</a>
+                <a href="#">Услуги</a>
             </div>
 
             <div class="responces">
-                <a  href="#">Отзывы</a>
-            </div>    
-                
+                <a href="#">Отзывы</a>
+            </div>
+
             <div class="contacts">
-                <a  href="#">Контакты</a>
+                <a href="#">Контакты</a>
             </div>
 
             <button class="link">
                 <a id="link_button" href="#">Связаться со мной</a>
             </button>     
+                <a href="#">Связаться со мной</a>
+            </button>
 
             <div class="number">
                 <a href="#">+7 (921) 430 32 35</a>
             </div>
-        
-        </div>   
+
+        </div>
     </footer>
 
 
