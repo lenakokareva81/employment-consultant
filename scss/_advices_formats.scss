@@ -1,0 +1,183 @@
+/* advices_formats */
+
+@media screen and (min-width: 1024px) {
+
+    .advicesformats {
+        display: grid;
+        grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    }
+
+    .advicesformats__container {
+        grid-column-start: main-content-start;
+        display: grid;
+        grid-template-areas: "first second"
+                             "third fourth";
+        gap: 100px;
+        margin-bottom: 200px;
+        min-height: max-content;
+    }
+
+    .advicesformats__title {
+        grid-column-start: main-content-start;
+        padding-bottom: 50px;
+        @include font-style-Jost(38px, #3D3D3D);
+        font-weight: 600;
+    }
+
+    .advicesformats__subtitle {        
+        padding: 10px;
+        @include font-style-Jost(30px, #3D3D3D);
+        font-weight: 600;
+    }
+
+    .advicesformats__text-container {
+        margin-left: 20px;
+    }
+
+    .advicesformats__text {
+        @include font-style-Jost(20px, #3D3D3D);
+        font-weight: 400;
+    }
+
+    .advicesformats__format--first,
+    .advicesformats__format--second,
+    .advicesformats__format--third,
+    .advicesformats__format--fourth {
+        padding-left: 14px;
+        padding-right: 64px;
+        border: 10px solid #4DE1B2;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .advicesformats__format--first {
+        grid-area: first;
+    }
+
+    .advicesformats__format--second {
+        grid-area: second;
+    }
+
+    .advicesformats__format--third {
+        grid-area: third;
+    }
+
+    .advicesformats__format--fourth {
+        grid-area: fourth;
+    }
+
+    .advicesformats__link-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 187px;
+        height: 43px;
+        margin-top: 110px;
+        margin-bottom: 30px;
+        @include font-style-Jost(20px, #ffffff);
+        font-weight: 500; 
+        text-decoration: none; 
+        cursor: pointer;
+        background-color: #F93264;
+        border: none;                                
+    }
+
+    .advicesformats__link-btn:hover {
+        background-color: #FA3465B2;
+    }
+
+    .advicesformats__link-btn:active {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .advicesformats {
+        display: grid;
+        grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    }
+
+    .advicesformats__container {
+        grid-column-start: main-content-start;
+        display: grid;
+        grid-template-areas: "first"
+                             "second"
+                             "third"
+                             "fourth";
+        gap: 100px;
+        margin-bottom: 200px;
+        min-height: max-content;
+    }
+
+    .advicesformats__title {
+        grid-column-start: main-content-start;
+        padding-bottom: 50px;
+        @include font-style-Jost(38px, #3D3D3D);
+        font-weight: 600;
+    }
+
+    .advicesformats__subtitle {        
+        padding: 10px;
+        @include font-style-Jost(30px, #3D3D3D);
+        font-weight: 600;
+    }
+
+    .advicesformats__text-container {
+        margin-left: 20px;
+    }
+
+    .advicesformats__text {
+        @include font-style-Jost(20px, #3D3D3D);
+        font-weight: 400;
+    }
+
+    .advicesformats__format--first,
+    .advicesformats__format--second,
+    .advicesformats__format--third,
+    .advicesformats__format--fourth {
+        padding-left: 14px;
+        padding-right: 64px;
+        border: 10px solid #4DE1B2;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .advicesformats__format--first {
+        grid-area: first;
+    }
+
+    .advicesformats__format--second {
+        grid-area: second;
+    }
+
+    .advicesformats__format--third {
+        grid-area: third;
+    }
+
+    .advicesformats__format--fourth {
+        grid-area: fourth;
+    }
+
+    .advicesformats__link-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 187px;
+        height: 43px;
+        margin-top: 110px;
+        margin-bottom: 30px;
+        @include font-style-Jost(20px, #ffffff);
+        font-weight: 500; 
+        text-decoration: none; 
+        cursor: pointer;
+        background-color: #F93264;
+        border: none;                                
+    }
+
+    .advicesformats__link-btn:hover {
+        background-color: #FA3465B2;
+    }
+
+    .advicesformats__link-btn:active {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+}
