@@ -1,0 +1,16 @@
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "services__title"
+        "services__icon-1"
+        "services__icon-2"
+        "services__icon-3"
+        ;
+    min-height: 70vh;
+    padding: 10%;
+    background-image: linear-gradient(180deg, rgba(77, 225, 178, 0.81)), url(/assets/img/for_whom_services/xavier-s-632JwD7OI-4-unsplash\ 1.png);
+    background-repeat: no-repeat;
+    padding-left: 0%;
+}
