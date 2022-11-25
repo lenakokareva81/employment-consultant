@@ -1,18 +1,3 @@
-h2 {
-    @include font-style-Roboto(1.3rem, #000000);
-    font-weight: 600;
-}
-
-p {
-    @include font-style-Roboto(1.1rem, #000000);
-    font-weight: 100;
-}
-
-figcaption {
-    @include font-style-Roboto(0.8rem, grey);
-    font-weight: 600;
-}
-
 .picture__subtext {
     padding-top: 2%;
 }
@@ -34,9 +19,15 @@ figcaption {
 
 @media screen and (min-width: 1024px) {
     .about-me__block {
-        grid-template-columns: 200px [main-content-start] 1fr [main-content-end] 200px;
-        margin: 3% 0 10% 0;
+        grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+        margin-top: 3%;
     }
+
+    h2 {
+        @include font-style-Roboto(1.3rem, #000000);
+        font-weight: 600;
+    }
+    
 
     .second-article__title {
         margin-bottom: 7%;
@@ -58,7 +49,11 @@ figcaption {
     .about-me__articles {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        gap: 2vh;
+    }
+
+    p {
+        @include font-style-Roboto(1.1rem, #000000);
+        font-weight: 100;
     }
     
     .about-me__picture-container {
@@ -77,6 +72,11 @@ figcaption {
         justify-content: center;
     }
 
+    .picture__subtext {
+        @include font-style-Roboto(0.8rem, grey);
+        font-weight: 600;
+    }
+
     .subtext-arrow {
         max-width: 3vw;
     }
@@ -84,18 +84,24 @@ figcaption {
 
 @media screen and (max-width: 1023px) {  
     .about-me__block {
-        padding: 5% 10% 10% 10%;
+        grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+        padding-bottom: 3%;
     }
 
+    h2 {
+        @include font-style-Roboto(1.5rem, #000000);
+        font-weight: 600;
+    }   
+
     .second-article__title {
-        margin-bottom: 3%;
+        margin-bottom: 10%;
     }
     
     .about-me__title {
         display: grid;
         grid-column-start: main-content-start;
         margin-bottom: 3%;
-        padding: 0 15vw 0 12vw;
+        padding: 10% 12vw 0 0;
     }
 
     .about-me__container {
@@ -110,25 +116,35 @@ figcaption {
         grid-area: articles;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        gap: 1vh;
-        padding: 0 15vw 0 12vw;
+        // padding: 0 9vw 0 11vw;
+    }
+
+    p {
+        @include font-style-Roboto(1.4em, #000000);
+        font-weight: 100;
     }
 
     .about-me__picture-container {
         grid-area: picture;
         max-width: 100%;
-        margin-left: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
     
         // display: flex;
         // justify-content: center;
     }
     
     .about-me__picture {
-        max-width: 70%;
+        max-width: 100%;
+    }
+
+    .picture-subtitle {
+        justify-content: center;
     }
 
     .picture__subtext {
-        margin-left: 20%;
+        @include font-style-Roboto(1rem, grey);
+        font-weight: 600;
     }
 
     .subtext-arrow {
