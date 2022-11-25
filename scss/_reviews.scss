@@ -1,19 +1,19 @@
 .reviews{
-    margin: 0 auto;
     padding: 0;
     position: relative;
+    display: grid;
+    grid-template-columns: 10.4vw [reviews-content-start] 1fr [reviews-content-end] 10.4vw;
 }
 .reviews__title{
-    @include font-style-Jost(2em, #3D3D3D);
-    margin: 60px 10%;
+    grid-column-start: reviews-content-start;
+    @include font-style-Jost(2.4em, #3D3D3D);
     font-weight: 600;
-    font-size: 38px;
     line-height: 55px;
 }
 .reviews__slideshow {
+    grid-column-start: reviews-content-start;
     display: none;
     display: grid; 
-    margin: 0 10%;
     align-items: center;
 }
 .reviews__slides-text {
@@ -66,12 +66,13 @@
     background: rgba(0, 194, 128, 1);
 }
 .reviews__dots{
+    grid-column-start: reviews-content-start;
     text-align: center;
 }
 .reviews__arrow{
     cursor: pointer;
     position: absolute;
-    font-size: 35px;
+    font-size: 2.1em;
     color: #fff;
     background: rgba(250, 52, 101, 1);
     padding: 3px 15px;
@@ -86,12 +87,14 @@
 
 @media screen and (min-width: 1024px) {
     .reviews__slideshow {
-        margin: 0 20%;
+        margin: 0 10%;
     }
     .reviews__prev{
-        left: 15%;
+        grid-column-start: reviews-content-start;
+        left: 1%;
     }
     .reviews__next{
-        right: 15%;
+        grid-column-end: reviews-content-end;
+        right: 1%;
     }
 }
