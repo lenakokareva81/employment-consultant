@@ -1,12 +1,19 @@
 .footer-first{
     background-color: #4DE1B2;
     height: 370px;
-}
-
-.footer-first{
     display:grid;
     grid-template-columns: 3(1fr);
 }
+
+.footer-first a{
+    color:#FFFFFF;
+}
+
+.footer-first a:hover{
+    color:#F93264;
+    transition:all 0.3s ease;
+}
+
 
 .link-details{
     margin-left:25%;
@@ -20,7 +27,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 25px;
     color: #000000;
 }
@@ -32,7 +39,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 46px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -45,9 +52,15 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 46px;
     color: #FFFFFF;
+}
+.social-net__mobile-whatsapp{
+    display:none;
+}
+.social-net__mobile-telegram{
+    display:none;
 }
 
 .white-block{
@@ -56,8 +69,8 @@
     position: absolute;
     width: 75px;
     height: 433px;
-    left:48%;
-    top: 2935px;
+    margin-left:48%;
+    margin-top:-28px;
     background: #FFFFFF;
     transform: rotate(16.72deg);
 }
@@ -72,13 +85,25 @@
     justify-content: space-around;
 }
 
-.whatsapp, .telegram{
-    width: 100px;
-    height:100px;
-    column-gap: 5em;
-    margin-top:120px;
+.fa-whatsapp:hover{
+    transform: translateY(-7px);
 }
 
+.fa-telegram:hover{
+    transform: translateY(-7px);
+}
+
+.social-net:hover i{
+    color:#FFFFFF;
+}
+
+.fa-whatsapp,
+.fa-telegram{
+    width: 100px;
+    margin-top:120px;
+    height:100px;
+    color:#FFFFFF;
+}
 
 .footer-second{
     display:grid;
@@ -86,15 +111,21 @@
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "logotype about-me responces link"
                         "policy services  contacts  number";
-                        height:100px;
+                        height:200px;
                         padding-top:80px;
                         margin-left:5%;
                         margin-right:8.5%;
+                        padding-bottom:21px;
 }
 
 *{
     text-decoration: none;
-    color:black;
+    color: #000000;
+}
+
+.footer-second a:hover{
+    color:#F93264;
+    transition:all 0.3s ease;
 }
 
 .logotype{
@@ -103,7 +134,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 25px;
 }
 
@@ -112,7 +143,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.87em;
     line-height: 20px;
     color: #22303B;
 }
@@ -123,7 +154,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 25px;
     color: #3D3D3D;
 }
@@ -134,7 +165,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 25px;
     color: #3D3D3D;
 }
@@ -145,7 +176,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 25px;
     color: #3D3D3D;
 }
@@ -156,7 +187,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 25px;
     color: #3D3D3D;
 }
@@ -168,10 +199,21 @@
     text-align: center;
     margin-left: 45%;
     font-family: 'Jost';
-    font-size: 17px;
+    font-size: 1.06em;
     font-style: normal;
     font-weight: 500;
-    color: #3D3D3D;
+    background: #F93264;
+    border:none;
+}
+
+#link_button{
+    color:#FFFFFF;
+}
+
+
+.link:hover{
+    background-color:#00213C;
+    transition:all 0.3s ease;
 }
 
 .number{
@@ -181,25 +223,309 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 25px;
     color: #3D3D3D;
 }
 
+@media(max-width:1024px){
+    .about-me{
+        padding-left: 40%;
+    }
+    
+    .services{
+        padding-left: 40%;
+    }
+
+    .link{
+        margin-left: 30%;
+    }
+    
+    .number{
+        margin-left:30%;
+    }
+}
+@media(max-width:970px) {
+    .logotype1{
+        font-weight: 500;
+        font-size:1.2em;
+        line-height: 17px;
+    }
+
+    .number1{
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 17px;
+    }
+
+    .mail{
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+    .logotype{
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 17px;
+    }
+
+    .about-me{
+        padding-left: 30%;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 14px;
+    }
+
+    .services{
+        padding-left: 30%;
+        font-size: 1em;
+        line-height: 14px;
+    }
+
+    .responces{
+        padding-left:10%;
+        font-size: 1em;
+        line-height: 14px;
+    }
+
+    .contacts{
+        padding-left:10%; 
+        font-size: 1em;
+        line-height: 14px;
+    }
+
+    .link{
+        margin-left:20%;
+        font-size: 1em;
+    }
+
+    .number{
+        width:155px;
+        height:30px;
+        margin-left:20%;   
+        font-size: 1em;
+        line-height: 14px;
+        border:1px solid black;
+    }
+
+    @media(max-width:767px){
+        .footer-first{
+            height: 245px;
+        }
+
+        .logotype1{
+            margin-bottom:21px;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 17px;
+        }
+
+        .number1{
+            margin-bottom:21px;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 17px;
+        }
+
+        .mail{
+            font-weight: 600;
+            font-size: 1em;
+            line-height: 17px;
+        }
+       .social-net{
+            flex-direction:column;
+        } 
+        
+        .social-net i{
+            flex-direction:column;
+            margin:0;
+        }
+
+        .white-block{
+            position: absolute; 
+            width: 28.49px;
+            height: 265.9px;
+            margin-left:48%;
+            margin-top:-10.64px;
+        }
+
+        .footer-second{
+            display:grid;
+            grid-template-columns: 4(1fr);
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "logotype about-me link"
+                                "policy  services number"
+                                " . responces  . "
+                                ". contacts . ";
+            height:250px;
+            margin-bottom:21px;
+            padding-top:80px;
+            margin-left:9%;
+            margin-right:10%;
+            border:box-sizing;
+        }
+
+        .logotype{
+            grid-area:logotype;
+            margin-bottom: 18px;
+            font-weight: 500;
+            font-size: 1em;
+            line-height:17px;
+        }
+
+        .policy{
+            grid-area:policy;
+            font-weight: 400;
+            font-size: 0.75em;
+            line-height: 17px;
+        }
+
+        .about-me{
+            grid-area: about-me;
+            margin-left:40%;
+            width:120px;
+            font-weight: 500;
+            font-size: 0.8em;
+            line-height:17px;
+        }
+
+        .services{
+            grid-area:services;
+            margin-left:40%;
+            width:120px;
+            margin-bottom:18px;
+            font-weight: 500;
+            font-size: 0.8em;
+            line-height: 17px;
+        }
+
+        .responces{
+            grid-area:responces;
+            margin-left:40%;
+            margin-bottom:18px;
+            width:120px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.8em;
+            line-height: 17px;
+        }
+
+        .contacts{
+            grid-area:contacts;
+            margin-left:40%;
+            width:120px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.8em;
+            line-height: 17px;
+        }
+
+        .link{
+            margin-left:90%;
+            width:120px;
+            height:21px;
+            font-size: 0.8em;
+            
+        }
+
+        .number{
+            grid-area:number;
+            width:120px;
+            margin-left:90%;
+            font-weight: 500;
+            font-size: 0.8em;
+            line-height: 17px;
+        }
+    }
+    @media(max-width:559px){
+        .responces{
+            margin-left:30%;
+        } 
+        .contacts{
+            margin-left:31%;
+        }
+        .link, 
+        .number{
+            margin-left:70%;
+        }
+    @media(max-width:520px){
+        .link, 
+        .number{
+            margin-left:60%;
+        }
+        }
+        @media(max-width:515px){
+        .about-me{
+            margin-left:10%;
+        }
+        .services{
+            margin-left:10%;
+        }
+        .responces{
+            margin-left:8%;
+        } 
+        .contacts{
+            margin-left:8%;
+        }
+        .link, 
+        .number{
+            margin-left:30%;
+        }
+    }
+    }
+    @media(max-width:470px){
+        .link-details >div{
+            width:150px;
+            font-size: 0.8em;
+        }
 
 
+        .about-me, .services, 
+        .responces, .contacts{
+            margin-left:-10%; 
+            width:100px;
+        }
+        .link, 
+        .number{
+            margin-left:0%;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     @media(max-width:410px){
+        .about-me, .services, 
+        .responces, .contacts{
+            margin-left:-20%; 
+        }
+        .link, 
+        .number{
+            margin-left:-20%;
+        }     
+}
+    @media(max-width:380px){
+        .link-details >div{
+            width:150px;
+            font-size: 0.7em;
+        }
+        
+    .logotype{
+        font-size: 0.6em;
+}
+    .policy{
+    font-size:0.4em;
+}
+        .about-me, .services, 
+        .responces, .contacts{
+            width:90px;
+            font-size:0.6em;
+            margin-left:20%; 
+        }
+        .link, 
+        .number{
+            width:90px;
+            font-size:0.6em;
+            margin-left:40%;
+        }     
+    }
+}
