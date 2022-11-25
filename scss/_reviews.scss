@@ -6,9 +6,8 @@
 }
 .reviews__title{
     grid-column-start: reviews-content-start;
-    @include font-style-Jost(2em, #3D3D3D);
+    @include font-style-Jost(2.4em, #3D3D3D);
     font-weight: 600;
-    font-size: 38px;
     line-height: 55px;
 }
 .reviews__slideshow {
@@ -73,7 +72,7 @@
 .reviews__arrow{
     cursor: pointer;
     position: absolute;
-    font-size: 35px;
+    font-size: 2.1em;
     color: #fff;
     background: rgba(250, 52, 101, 1);
     padding: 3px 15px;
