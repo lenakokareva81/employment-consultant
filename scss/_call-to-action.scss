@@ -1,10 +1,9 @@
 $text-color: #FFFFFF;
 
 .call-to-action {
-    background-image: url("call-to-action-background.png");
+    background-image: url("../assets/img/call-to-action-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: $text-color;
 
     height: 16.2em;
 
@@ -20,6 +19,15 @@ $text-color: #FFFFFF;
 .call-to-action__title {
     color: $text-color;
     margin: 0;
+
+    text-align: center;
+    font-weight: 600;
+}
+
+.call-to-action__paragraph {
+    text-align: center;
+    color: $text-color;
+    font-weight: 400;
 }
 
 .call-to-action__buttons {
@@ -35,14 +43,17 @@ $text-color: #FFFFFF;
 
     text-decoration: none;
     padding: 10px;
+    font-weight: 500;
 }
 
-.call-to-action__whatsapp-button {
+.call-to-action__whatsapp-button,
+.call-to-action__telegram-button:hover {
     background-color: #F93264;
     color: $text-color;
 }
 
-.call-to-action__telegram-button {
+.call-to-action__telegram-button,
+.call-to-action__whatsapp-button:hover {
     background-color: $text-color;
     color: #3D3D3D;
 }
