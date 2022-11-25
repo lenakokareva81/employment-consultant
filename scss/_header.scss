@@ -53,7 +53,6 @@
     text-decoration: none;
 }
 
-
 .navigation__point:hover {
     color: #F93264;
 }
@@ -139,7 +138,7 @@
 }
 
 #burger {
-    display: none;
+    display: block;
 }
 
 .menu::before {
