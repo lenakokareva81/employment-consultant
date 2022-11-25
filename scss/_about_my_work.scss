@@ -1,16 +1,95 @@
-.work__name {
-    @include font-style-Jost(32px, #3D3D3D);
-    font-weight: 500;
-}
+@media screen and (max-width: 1023px) {
+    .work {
+        display: grid;
+        grid-template-rows: 70px 1fr;
+        grid-template-columns: 10.4vw [work-content-start] 1fr [work-content-end] 10.4vw;
+    }
 
-.work__text {
-    @include font-style-Jost(24px, #3D3D3D);
-    font-weight: 400;
-}
+    .work__title {
+        grid-column-start: work-content-start;
+        align-self: center;
+        @include font-style-Jost(16px, #3D3D3D);
+        font-weight: 600;
+    }
 
-.work__point-a {
-    @include font-style-Jost(48px, #4DE1B2);
-    font-weight: 600;
+    .work__container {
+        grid-column-start: work-content-start;
+        display: grid;
+        grid-template-rows: [work-content-start] repeat(auto-fit, max-content);
+        grid-template-columns: [work-img-start] 7.4vw [work-line-end] 2.6vw [work-text-start] 4.8vw [work-img-end work-name-start] 1fr [work-content-end];
+    }
+
+    .work__point-a,
+    .work__point-b {
+        display: none;
+    }
+
+    .work__img {
+        grid-column-start: work-img-start;
+        grid-column-end: work-img-end;
+        justify-self: center;
+    }
+
+    .work__circle-1 {
+        width: 90%;
+        max-width: 120px;
+    }
+
+    .work__circle-2,
+    .work__circle-3,
+    .work__circle-4 {
+        width: 73%;
+        max-width: 100px;
+    }
+
+    .work__circle-5 {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .work__name {
+        grid-column-start: work-name-start;
+        grid-column-end: work-content-end;
+        align-self: center;
+        padding-left: 5px;
+        @include font-style-Jost(14px, #3D3D3D);
+        font-weight: 500;
+    }
+
+    .work__apply-name {
+        grid-row-start: 1;
+    }
+
+    .work__text {
+        grid-column-start: work-text-start;
+        grid-column-end: work-content-end;
+        padding: 15px 10px;
+        @include font-style-Jost(11px, #3D3D3D);
+        font-weight: 400;
+    }
+
+    .work__line {
+        grid-column-start: work-img-start;
+        grid-column-end: work-line-end;
+        justify-self: end;
+        width: 2px;
+        background-color: #A4FDE1;
+    }
+
+    .work__line-2 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .work__line-3 {
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .work__line-4 {
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -37,6 +116,8 @@
     .work__point-a {
         grid-row-start: apply-name-start;
         grid-column-start: work-right-start;
+        @include font-style-Jost(48px, #4DE1B2);
+        font-weight: 600;
     }
 
     .work__name,
@@ -44,22 +125,35 @@
         align-self: center;
     }
 
+    .work__name {
+        @include font-style-Jost(32px, #3D3D3D);
+        font-weight: 500;
+    }
+
     .work__text {
         padding-bottom: 100px;
+        @include font-style-Jost(24px, #3D3D3D);
+        font-weight: 400;
+    }
+
+    .work__img {
+        justify-self: center;
+    }
+
+    .work__line {
+        justify-self: center;
+        width: 5px;
+        background-color: #A4FDE1;
     }
 
     .work__circle-1 {
         grid-row-start: apply-name-start;
         grid-column-start: work-center-start;
-        justify-self: center;
     }
 
     .work__line-1 {
         grid-row-start: apply-text-start;
         grid-column-start: work-center-start;
-        justify-self: center;
-        width: 5px;
-        background-color: #A4FDE1;
     }
 
     .work__apply-name,
@@ -74,15 +168,11 @@
     .work__circle-2 {
         grid-row-start: consult-name-start;
         grid-column-start: work-center-start;
-        justify-self: center;
     }
 
     .work__line-2 {
         grid-row-start: consult-text-start;
         grid-column-start: work-center-start;
-        justify-self: center;
-        width: 5px;
-        background-color: #A4FDE1;
     }
 
     .work__consult-name {
@@ -98,7 +188,6 @@
     .work__circle-3 {
         grid-row-start: search-name-start;
         grid-column-start: work-center-start;
-        justify-self: center;
     }
 
     .work__search-name {
@@ -114,15 +203,11 @@
     .work__line-3 {
         grid-row-start: search-text-start;
         grid-column-start: work-center-start;
-        justify-self: center;
-        width: 5px;
-        background-color: #A4FDE1;
     }
 
     .work__circle-4 {
         grid-row-start: support-name-start;
         grid-column-start: work-center-start;
-        justify-self: center;
     }
 
     .work__support-name {
@@ -138,16 +223,12 @@
     .work__line-4 {
         grid-row-start: support-text-start;
         grid-column-start: work-center-start;
-        justify-self: center;
-        width: 5px;
-        background-color: #A4FDE1;
     }
 
     .work__circle-5 {
         grid-row-start: result-name-start;
         grid-row-end: work-content-end;
         grid-column-start: work-center-start;
-        justify-self: center;
     }
 
     .work__result-name {
