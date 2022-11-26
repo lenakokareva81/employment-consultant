@@ -1,0 +1,86 @@
+h2 {
+    font-family: Jost;
+    font-weight: 600;
+    color: #3D3D3D;
+}
+
+p {
+    font-family: Jost;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .advicesformats {
+        display: grid;
+        grid-template-columns: 9vw [main-content-start] 1fr [main-content-end] 9vw;
+    }
+
+    .advicesformats__container {
+        grid-column-start: main-content-start;
+        display: grid;
+        grid-template-areas: "first second"
+            "third fourth";
+        margin-bottom: 200px;
+        gap: 100px;
+        min-height: max-content;
+    }
+
+    .advicesformats__title {
+        grid-column-start: main-content-start;
+        padding-bottom: 50px;
+        font-size: 30px;
+    }
+
+    .advicesformats__format--first,
+    .advicesformats__format--second,
+    .advicesformats__format--third,
+    .advicesformats__format--fourth {
+        border: 10px solid #4DE1B2;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        padding-left: 17px;
+        padding-right: 61px;
+    }
+
+    .advicesformats__format--first {
+        grid-area: first;
+    }
+
+    .advicesformats__format--second {
+        grid-area: second;
+    }
+
+    .advicesformats__format--third {
+        grid-area: third;
+    }
+
+    .advicesformats__format--fourth {
+        grid-area: fourth;
+    }
+
+    .advicesformats__link-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Jost;
+        width: 160px;
+        height: 40px;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #F93264;
+        border: none;
+        margin-top: 110px;
+        margin-bottom: 30px;
+    }
+
+    .advicesformats__link-btn:hover {
+        background-color: #FA3465B2;
+    }
+
+    .advicesformats__link-btn:active {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+}
