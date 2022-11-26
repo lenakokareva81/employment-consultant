@@ -1,32 +1,41 @@
 @charset "UTF-8";
+h2 {
+  font-family: "Intro Demo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  color: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /*outline: 1px solid #F93264;*/
 }
 
 .header {
+  min-height: 70vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/img/header/header-mobile.png);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
+  background-size: cover;
+  padding: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas: "logo menu" "headline headline" "action action";
-  min-height: 70vh;
-  padding: 10%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/img/header/header-mobile.png);
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
-  background-size: cover;
 }
 
 .logo {
-  grid-area: logo;
   font-family: "Jost", sans-serif;
   font-style: normal;
+  font-weight: 500;
   font-size: 12px;
   line-height: 17px;
-  font-weight: 500;
   color: #3D3D3D;
+  grid-area: logo;
 }
 
 .action {
@@ -40,11 +49,19 @@
 }
 
 .navigation__item {
-  border: 1px solid #ffffff;
   list-style-type: none;
+  border: 1px solid #ffffff;
 }
 
 .navigation__point {
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  color: #00213C;
+  padding-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,14 +70,6 @@
           justify-content: flex-end;
   -ms-flex-item-align: center;
       align-self: center;
-  padding-right: 25px;
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-size: 0.9em;
-  line-height: 1.3em;
-  font-weight: 600;
-  color: #00213C;
-  text-decoration: none;
 }
 
 .navigation__point:hover {
@@ -71,16 +80,16 @@
 .action__service {
   width: 115px;
   height: 24px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  background: #F93264;
   font-family: "Jost", sans-serif;
   font-style: normal;
+  font-weight: 500;
   font-size: 0.75em;
   line-height: 1.2em;
-  font-weight: 500;
   color: #FFFFFF;
-  background: #F93264;
   border: none;
+  -ms-flex-item-align: center;
+      align-self: center;
   cursor: pointer;
 }
 
@@ -107,37 +116,37 @@
 }
 
 .headline__text {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 1.4em;
+  color: #00213C;
   margin: 0;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-size: 1.8em;
-  line-height: 1.4em;
-  font-weight: 600;
-  color: #00213C;
 }
 
 .headline__description {
   font-family: "Jost", sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 0.9em;
   line-height: 1.5em;
-  font-weight: 400;
   color: #152836;
 }
 
 .action__questionnaire {
-  padding-left: 2vw;
-  -ms-flex-item-align: center;
-      align-self: center;
+  text-decoration: none;
   font-family: "Jost", sans-serif;
   font-style: normal;
+  font-weight: 500;
   font-size: 0.75em;
   line-height: 1.2em;
-  font-weight: 500;
   color: #00213C;
-  text-decoration: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-left: 2vw;
 }
 
 .action__questionnaire:hover {
@@ -145,18 +154,18 @@
 }
 
 .menu {
-  position: fixed;
-  top: 30px;
-  right: 15px;
-  grid-area: menu;
   display: block;
+  position: fixed;
   width: 30px;
   text-align: center;
+  right: 15px;
+  top: 30px;
+  grid-area: menu;
   cursor: pointer;
 }
 
 #burger {
-  display: block;
+  display: none;
 }
 
 .menu::before {
@@ -164,14 +173,14 @@
 }
 
 .navigation {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
-  display: none;
   margin-top: 50px;
   margin-right: 40px;
-  width: 40%;
   background: rgba(221, 235, 249, 0.7);
+  width: 40%;
   border: 1px solid #ffffff;
 }
 
@@ -204,32 +213,31 @@
 
 @media screen and (min-width: 1024px) {
   .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/img/header/header.png);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
     padding: 60px 200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: "logo navigation navigation" "headline headline headline" "action action action";
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/img/header/header.png);
-    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
   }
   #burger,
 .menu {
     display: none;
   }
   .navigation {
-    position: static;
-    grid-area: navigation;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    background: none;
+    position: static;
     margin: 0;
+    grid-area: navigation;
+    width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    align-self: start;
-    background: none;
     border: none;
+    align-self: start;
   }
   .navigation__list {
     display: -webkit-box;
@@ -973,7 +981,6 @@ figcaption {
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -1089,7 +1096,6 @@ h2 {
   min-height: 70vh;
   padding: 10%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 225, 178, 0.81))), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
-  background-image: -o-linear-gradient(top, rgba(77, 225, 178, 0.81)), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
   background-image: linear-gradient(180deg, rgba(77, 225, 178, 0.81)), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
   background-repeat: no-repeat;
   height: 65em;
@@ -1142,7 +1148,6 @@ footer {
 .footer-first a:hover {
   color: #F93264;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1198,7 +1203,6 @@ footer {
   margin-top: -28px;
   background: #FFFFFF;
   -webkit-transform: rotate(16.72deg);
-      -ms-transform: rotate(16.72deg);
           transform: rotate(16.72deg);
 }
 
@@ -1216,13 +1220,11 @@ footer {
 
 .fa-whatsapp:hover {
   -webkit-transform: translateY(-7px);
-      -ms-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
 .fa-telegram:hover {
   -webkit-transform: translateY(-7px);
-      -ms-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
@@ -1258,7 +1260,6 @@ footer {
 .footer-second a:hover {
   color: #F93264;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1349,7 +1350,6 @@ footer {
 .link:hover {
   background-color: #00213C;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1765,7 +1765,6 @@ footer {
 .call-to-action__whatsapp-button:hover {
   background-color: #00213C;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1795,4 +1794,4 @@ footer {
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-}
+}/*# sourceMappingURL=app.css.map */
