@@ -10,7 +10,7 @@
     .certificates__title {
         grid-column-start: main-content-start;
         padding-bottom: 50px;
-        @include font-style-Jost(38px, #3D3D3D);
+        @include font-style-Jost(2.4em, #3D3D3D);
         font-weight: 600;
     }
 
@@ -19,7 +19,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 100px;
-        margin-bottom: 200px;
     }
 
     .certificates__img--one,
@@ -39,16 +38,15 @@
     .certificates__title {
         grid-column-start: main-content-start;
         padding-bottom: 50px;
-        @include font-style-Jost(38px, #3D3D3D);
+        @include font-style-Jost(2.4em, #3D3D3D);
         font-weight: 600;
     }
 
     .certificates__img {
         grid-column-start: main-content-start;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 100px;
-        margin-bottom: 200px;
     }
 
     .certificates__img--one,

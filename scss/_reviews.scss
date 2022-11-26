@@ -9,6 +9,7 @@
     @include font-style-Jost(2.4em, #3D3D3D);
     font-weight: 600;
     line-height: 55px;
+    margin: 50px 0;
 }
 .reviews__slideshow {
     grid-column-start: reviews-content-start;
