@@ -46,16 +46,24 @@ $text-color: #FFFFFF;
     font-weight: 500;
 }
 
-.call-to-action__whatsapp-button,
-.call-to-action__telegram-button:hover {
+.call-to-action__whatsapp-button {
     background-color: #F93264;
     color: $text-color;
 }
 
-.call-to-action__telegram-button,
-.call-to-action__whatsapp-button:hover {
+.call-to-action__telegram-button {
     background-color: $text-color;
     color: #3D3D3D;
+}
+
+.call-to-action__telegram-button:hover,
+.call-to-action__whatsapp-button:hover {
+    background-color:#00213C;
+    transition:all 0.3s ease;
+}
+
+.call-to-action__telegram-button:hover {
+    color: $text-color;
 }
 
 @media (max-width: 767px) {
