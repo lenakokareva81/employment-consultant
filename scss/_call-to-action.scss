@@ -36,13 +36,16 @@
 }
 
 .call-to-action__whatsapp-button {
+    @include font-style-Jost(20px, #FFFFFF);
+    font-weight: 500;
     background-color: #F93264;
-    color: $text-color;
 }
 
 .call-to-action__telegram-button {
-    background-color: $text-color;
-    color: #3D3D3D;
+    @include font-style-Jost(20px, #3D3D3D);
+    font-weight: 500;
+    background-color: #FFFFFF;
+    // color: #3D3D3D;
 }
 
 .call-to-action__telegram-button:hover,
@@ -52,7 +55,7 @@
 }
 
 .call-to-action__telegram-button:hover {
-    color: $text-color;
+    color: #FFFFFF;
 }
 
 @media (max-width: 1023px) {

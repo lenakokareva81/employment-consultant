@@ -792,6 +792,7 @@ figcaption {
   .advicesformats {
     display: grid;
     grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    margin-top: 60px;
   }
   .advicesformats__container {
     grid-column-start: main-content-start;
@@ -809,7 +810,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 16px;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -819,7 +820,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 14px;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -831,7 +832,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 10px;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -870,7 +871,7 @@ figcaption {
             justify-content: center;
     width: 187px;
     height: 43px;
-    margin-top: 110px;
+    margin-top: 45px;
     margin-bottom: 30px;
     font-family: "Jost";
     font-style: normal;
@@ -1085,6 +1086,7 @@ figcaption {
     height: 100%;
   }
 }
+/* For whom are my services */
 .customer__container {
   display: grid;
   grid-template-columns: 10.4vw [customer-content-start] 1fr 10.4vw;
@@ -1814,13 +1816,25 @@ footer {
 }
 
 .call-to-action__whatsapp-button {
-  background-color: #F93264;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.6;
   color: #FFFFFF;
+  font-weight: 500;
+  background-color: #F93264;
 }
 
 .call-to-action__telegram-button {
-  background-color: #FFFFFF;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.6;
   color: #3D3D3D;
+  font-weight: 500;
+  background-color: #FFFFFF;
 }
 
 .call-to-action__telegram-button:hover,

@@ -96,6 +96,7 @@
     .advicesformats {
         display: grid;
         grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+        margin-top: 60px;
     }
 
     .advicesformats__container {
@@ -113,13 +114,13 @@
     .advicesformats__title {
         grid-column-start: main-content-start;
         padding-bottom: 50px;
-        @include font-style-Jost(38px, #3D3D3D);
+        @include font-style-Jost(16px, #3D3D3D);
         font-weight: 600;
     }
 
     .advicesformats__subtitle {
         padding: 10px;
-        @include font-style-Jost(30px, #3D3D3D);
+        @include font-style-Jost(14px, #3D3D3D);
         font-weight: 600;
     }
 
@@ -128,7 +129,7 @@
     }
 
     .advicesformats__text {
-        @include font-style-Jost(20px, #3D3D3D);
+        @include font-style-Jost(10px, #3D3D3D);
         font-weight: 400;
     }
 
@@ -164,7 +165,7 @@
         justify-content: center;
         width: 187px;
         height: 43px;
-        margin-top: 110px;
+        margin-top: 45px;
         margin-bottom: 30px;
         @include font-style-Jost(20px, #ffffff);
         font-weight: 500;
