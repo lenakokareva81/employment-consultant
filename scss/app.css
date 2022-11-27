@@ -1767,7 +1767,6 @@ footer {
   background-image: url("../assets/img/call-to-action-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 16.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1783,20 +1782,17 @@ footer {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: "Jost";
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .call-to-action__title {
-  color: #FFFFFF;
   margin: 0;
   text-align: center;
-  font-weight: 600;
 }
 
 .call-to-action__paragraph {
   text-align: center;
-  color: #FFFFFF;
-  font-weight: 400;
 }
 
 .call-to-action__buttons {
@@ -1808,7 +1804,6 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 2.5em;
-  margin-top: 30px;
 }
 
 .call-to-action__button {
@@ -1839,16 +1834,60 @@ footer {
   color: #FFFFFF;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .call-to-action {
-    height: 20em;
+    padding: 70px 10.4vw;
+  }
+  .call-to-action__title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .call-to-action__paragraph {
+    margin-top: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
   }
   .call-to-action__buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5px;
+    gap: 16px;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .call-to-action__title {
+    width: 885px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .call-to-action__paragraph {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+  .call-to-action__buttons {
+    margin-top: 84px;
   }
 }
 /*html {

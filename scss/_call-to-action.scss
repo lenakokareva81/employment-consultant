@@ -1,41 +1,30 @@
-$text-color: #FFFFFF;
-
 .call-to-action {
     background-image: url("../assets/img/call-to-action-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 16.2em;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-    font-family: 'Jost';
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .call-to-action__title {
-    color: $text-color;
     margin: 0;
-
     text-align: center;
-    font-weight: 600;
 }
 
 .call-to-action__paragraph {
     text-align: center;
-    color: $text-color;
-    font-weight: 400;
 }
 
 .call-to-action__buttons {
     display: flex;
     flex-direction: row;
     gap: 2.5em;
-
-    margin-top: 30px;
 }
 
 .call-to-action__button {
@@ -58,21 +47,50 @@ $text-color: #FFFFFF;
 
 .call-to-action__telegram-button:hover,
 .call-to-action__whatsapp-button:hover {
-    background-color:#00213C;
-    transition:all 0.3s ease;
+    background-color: #00213C;
+    transition: all 0.3s ease;
 }
 
 .call-to-action__telegram-button:hover {
     color: $text-color;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     .call-to-action {
-        height: 20em;
+        padding: 70px 10.4vw;
+    }
+
+    .call-to-action__title {
+        @include font-style-Jost(16px, #FFFFFF);
+        font-weight: 600;
+    }
+
+    .call-to-action__paragraph {
+        margin-top: 10px;
+        @include font-style-Jost(14px, #FFFFFF);
+        font-weight: 400;
     }
 
     .call-to-action__buttons {
         flex-direction: column;
-        gap: 5px;
+        gap: 16px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .call-to-action__title {
+        width: 885px;
+        @include font-style-Jost(38px, #FFFFFF);
+        font-weight: 600;
+    }
+
+    .call-to-action__paragraph {
+        @include font-style-Jost(32px, #FFFFFF);
+        font-weight: 400;
+    }
+
+    .call-to-action__buttons {
+        margin-top: 84px;
     }
 }
