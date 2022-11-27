@@ -96,6 +96,8 @@ h2 {
 .navigation__connection:hover,
 .action__service:hover {
   background: #00213C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navigation__connection {
@@ -679,6 +681,12 @@ figcaption {
   }
 }
 /* advices_formats */
+.advicesformats__link-btn:hover {
+  background-color: #00213C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 @media screen and (min-width: 1024px) {
   .advicesformats {
     display: grid;
@@ -774,9 +782,6 @@ figcaption {
     cursor: pointer;
     background-color: #F93264;
     border: none;
-  }
-  .advicesformats__link-btn:hover {
-    background-color: rgba(250, 52, 101, 0.6980392157);
   }
   .advicesformats__link-btn:active {
     -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
@@ -878,9 +883,6 @@ figcaption {
     cursor: pointer;
     background-color: #F93264;
     border: none;
-  }
-  .advicesformats__link-btn:hover {
-    background-color: rgba(250, 52, 101, 0.6980392157);
   }
   .advicesformats__link-btn:active {
     -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);

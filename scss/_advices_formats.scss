@@ -1,5 +1,10 @@
 /* advices_formats */
 
+.advicesformats__link-btn:hover {
+    background-color: #00213C;
+    transition: all 0.3s ease;
+}
+
 @media screen and (min-width: 1024px) {
 
     .advicesformats {
@@ -11,7 +16,7 @@
         grid-column-start: main-content-start;
         display: grid;
         grid-template-areas: "first second"
-                             "third fourth";
+            "third fourth";
         gap: 100px;
         margin-bottom: 200px;
         min-height: max-content;
@@ -24,7 +29,7 @@
         font-weight: 600;
     }
 
-    .advicesformats__subtitle {        
+    .advicesformats__subtitle {
         padding: 10px;
         @include font-style-Jost(30px, #3D3D3D);
         font-weight: 600;
@@ -68,21 +73,17 @@
     .advicesformats__link-btn {
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         width: 187px;
         height: 43px;
         margin-top: 110px;
         margin-bottom: 30px;
         @include font-style-Jost(20px, #ffffff);
-        font-weight: 500; 
-        text-decoration: none; 
+        font-weight: 500;
+        text-decoration: none;
         cursor: pointer;
         background-color: #F93264;
-        border: none;                                
-    }
-
-    .advicesformats__link-btn:hover {
-        background-color: #FA3465B2;
+        border: none;
     }
 
     .advicesformats__link-btn:active {
@@ -101,9 +102,9 @@
         grid-column-start: main-content-start;
         display: grid;
         grid-template-areas: "first"
-                             "second"
-                             "third"
-                             "fourth";
+            "second"
+            "third"
+            "fourth";
         gap: 100px;
         margin-bottom: 200px;
         min-height: max-content;
@@ -116,7 +117,7 @@
         font-weight: 600;
     }
 
-    .advicesformats__subtitle {        
+    .advicesformats__subtitle {
         padding: 10px;
         @include font-style-Jost(30px, #3D3D3D);
         font-weight: 600;
@@ -160,21 +161,17 @@
     .advicesformats__link-btn {
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         width: 187px;
         height: 43px;
         margin-top: 110px;
         margin-bottom: 30px;
         @include font-style-Jost(20px, #ffffff);
-        font-weight: 500; 
-        text-decoration: none; 
+        font-weight: 500;
+        text-decoration: none;
         cursor: pointer;
         background-color: #F93264;
-        border: none;                                
-    }
-
-    .advicesformats__link-btn:hover {
-        background-color: #FA3465B2;
+        border: none;
     }
 
     .advicesformats__link-btn:active {
