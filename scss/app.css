@@ -458,17 +458,17 @@ figcaption {
   }
   .work__circle-1 {
     width: 90%;
-    max-width: 120px;
+    max-width: 80px;
   }
   .work__circle-2,
 .work__circle-3,
 .work__circle-4 {
     width: 73%;
-    max-width: 100px;
+    max-width: 60px;
   }
   .work__circle-5 {
     width: 100%;
-    max-width: 200px;
+    max-width: 120px;
   }
   .work__name {
     grid-column-start: work-name-start;
@@ -1083,53 +1083,118 @@ figcaption {
     height: 100%;
   }
 }
-h2 {
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
+.customer__container {
+  display: grid;
+  grid-template-columns: 10.4vw [customer-content-start] 1fr 10.4vw;
 }
 
 .customer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "customer__title customer__title customer__title" "customer__icon-1 customer__icon-2  customer__icon-3";
-  min-height: 70vh;
-  padding: 10%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 225, 178, 0.81))), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
-  background-image: linear-gradient(180deg, rgba(77, 225, 178, 0.81)), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
+  background-image: url("../assets/img/customer/customer-bg.png");
   background-repeat: no-repeat;
-  height: 65em;
+  background-size: cover;
 }
 
-.customer__title {
-  grid-area: customer__title;
-  font-size: 2.4em;
-  color: #FFFFFF;
+.customer__container {
+  background-color: rgba(77, 225, 178, 0.81);
 }
 
-.customer__icon-1 {
-  grid-area: customer__icon-1;
-  justify-self: center;
+.customer__title,
+.customer__content {
+  grid-column-start: customer-content-start;
 }
 
-.customer__icon-2 {
-  grid-area: customer__icon-2;
-  justify-self: center;
+.customer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.customer__icon-3 {
-  grid-area: customer__icon-3;
-  justify-self: center;
+.customer__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.customer__icons {
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 2.5em;
-  color: #FFFFFF;
-  text-align: center;
+@media screen and (max-width: 1023px) {
+  .customer__container {
+    grid-template-rows: 100px 540px;
+  }
+  .customer__title {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .customer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customer__type {
+    margin-bottom: 65px;
+  }
+  .customer__img {
+    width: 70px;
+  }
+  .customer__text {
+    margin-top: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
 }
-
+@media screen and (min-width: 1024px) {
+  .customer__container {
+    grid-template-rows: 300px 600px;
+  }
+  .customer__title {
+    margin-top: 90px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .customer__content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .customer__img {
+    width: 190px;
+  }
+  .customer__text {
+    margin-top: 50px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+}
 footer {
   margin-top: 10%;
 }

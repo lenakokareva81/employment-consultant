@@ -1,43 +1,88 @@
-$text-color: #FFFFFF;
-h2 {
-    font-family: "Jost", sans-serif;
-    font-weight: 600;
-}
-.customer {
+.customer__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas:
-        "customer__title customer__title customer__title"
-        "customer__icon-1 customer__icon-2  customer__icon-3"
-    ;
-    min-height: 70vh;
-    padding: 10%;
-    background-image: linear-gradient(180deg, rgba(77, 225, 178, 0.81)), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
+    grid-template-columns: 10.4vw [customer-content-start] 1fr 10.4vw;
+}
+
+.customer {
+    background-image: url("../assets/img/customer/customer-bg.png");
     background-repeat: no-repeat;
-    height: 65em;
+    background-size: cover;
 }
-.customer__title {
-    grid-area: customer__title;
-    font-size: 2.4em;
-    color: $text-color;
+
+.customer__container {
+    background-color: rgba(77, 225, 178, 0.81);
 }
-.customer__icon-1 {
-grid-area: customer__icon-1;
-justify-self: center;
+
+.customer__title,
+.customer__content {
+    grid-column-start: customer-content-start;
 }
-.customer__icon-2 {
-grid-area: customer__icon-2;
-justify-self: center;
+
+.customer__content {
+    display: flex;
 }
-.customer__icon-3 {
-grid-area: customer__icon-3;
-justify-self: center;
+
+.customer__type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.customer__icons {
-    font-family: "Jost", sans-serif;
-    font-weight: 600;
-    font-size: 2.5em;
-    color: $text-color;
-    text-align: center;
-} 
+
+@media screen and (max-width: 1023px) {
+
+    .customer__container {
+        grid-template-rows: 100px 540px;
+    }
+
+    .customer__title {
+        align-self: center;
+        @include font-style-Jost(16px, #FFFFFF);
+        font-weight: 600;
+    }
+
+    .customer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer__type {
+        margin-bottom: 65px;
+    }
+
+    .customer__img {
+        width: 70px;
+    }
+
+    .customer__text {
+        margin-top: 10px;
+        @include font-style-Jost(14px, #FFFFFF);
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .customer__container {
+        grid-template-rows: 300px 600px;
+    }
+
+    .customer__title {
+        margin-top: 90px;
+        @include font-style-Jost(38px, #FFFFFF);
+        font-weight: 600;
+    }
+
+    .customer__content {
+        justify-content: space-around;
+    }
+
+    .customer__img {
+        width: 190px;
+    }
+
+    .customer__text {
+        margin-top: 50px;
+        @include font-style-Jost(40px, #FFFFFF);
+        font-weight: 600;
+    }
+}
