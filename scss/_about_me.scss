@@ -1,15 +1,15 @@
-h2 {
-    @include font-style-Roboto(1.3rem, #000000);
-    font-weight: 600;
-}
+// h2 {
+//     @include font-style-Roboto(1.3rem, #000000);
+//     font-weight: 600;
+// }
 
-p {
-    @include font-style-Roboto(1.1rem, #000000);
-    font-weight: 100;
-}
+// p {
+//     @include font-style-Roboto(1.1rem, #000000);
+//     font-weight: 100;
+// }
 
 figcaption {
-    @include font-style-Roboto(0.8rem, grey);
+    @include font-style-Jost(0.8rem, grey);
     font-weight: 600;
 }
 
@@ -40,7 +40,7 @@ figcaption {
 
     .second-article__title {
         margin-bottom: 7%;
-        @include font-style-Jost(38px, #3D3D3D);
+        @include font-style-Jost(2.375em, #3D3D3D);
         font-weight: 600;
     }
 
@@ -48,12 +48,12 @@ figcaption {
         // display: grid;
         grid-column-start: main-content-start;
         margin-bottom: 3%;
-        @include font-style-Jost(38px, #3D3D3D);
+        @include font-style-Jost(2.375em, #3D3D3D);
         font-weight: 600;
     }
 
     .article__text {
-        @include font-style-Jost(20px, #3D3D3D);
+        @include font-style-Jost(1.25em, #3D3D3D);
         font-weight: 400;
     }
 
@@ -98,7 +98,7 @@ figcaption {
 
     .second-article__title {
         margin-bottom: 3%;
-        @include font-style-Jost(16px, #3D3D3D);
+        @include font-style-Jost(1.6em, #3D3D3D);
         font-weight: 600;
     }
 
@@ -107,12 +107,12 @@ figcaption {
         grid-column-start: main-content-start;
         margin-bottom: 3%;
         // padding: 0 15vw 0 12vw;
-        @include font-style-Jost(16px, #3D3D3D);
+        @include font-style-Jost(1.6em, #3D3D3D);
         font-weight: 600;
     }
 
     .article__text {
-        @include font-style-Jost(14px, #3D3D3D);
+        @include font-style-Jost(1em, #3D3D3D);
         font-weight: 400;
     }
 

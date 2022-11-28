@@ -281,30 +281,10 @@ h2 {
     border: none;
   }
 }
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  color: #000000;
-  font-weight: 600;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #000000;
-  font-weight: 100;
-}
-
 figcaption {
-  font-family: "Roboto", sans-serif;
+  font-family: "Jost";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 0.8rem;
   line-height: 1.6;
   color: grey;
@@ -343,7 +323,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 2.375em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -354,7 +334,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 2.375em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -363,7 +343,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -413,7 +393,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -424,7 +404,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -433,7 +413,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -469,7 +449,7 @@ figcaption {
 @media screen and (max-width: 1023px) {
   .work {
     display: grid;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 120px 1fr;
     grid-template-columns: 10.4vw [work-content-start] 1fr [work-content-end] 10.4vw;
   }
   .work__title {
@@ -478,7 +458,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -521,7 +501,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 500;
@@ -536,7 +516,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 0.9em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -573,7 +553,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 2.375em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -591,7 +571,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 3em;
     line-height: 1.6;
     color: #4DE1B2;
     font-weight: 600;
@@ -605,7 +585,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 500;
@@ -615,7 +595,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -851,7 +831,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -861,7 +841,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.2em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -873,7 +853,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 0.8em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -938,18 +918,6 @@ figcaption {
   grid-template-columns: 10.4vw [reviews-content-start] 1fr [reviews-content-end] 10.4vw;
 }
 
-.reviews__title {
-  grid-column-start: reviews-content-start;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4em;
-  line-height: 1.6;
-  color: #3D3D3D;
-  font-weight: 600;
-  line-height: 55px;
-}
-
 .reviews__slideshow {
   grid-column-start: reviews-content-start;
   display: none;
@@ -989,12 +957,6 @@ figcaption {
 }
 
 .reviews__slides-title {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.6em;
-  line-height: 1.6;
-  color: #fff;
   grid-area: reviews__slides-title;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,12 +968,6 @@ figcaption {
 }
 
 .reviews__text {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #fff;
   grid-area: reviews__text;
   margin: 35px;
 }
@@ -1028,7 +984,8 @@ figcaption {
   transition: background-color 0.6s ease;
 }
 
-.active, .reviews__dot:hover {
+.active,
+.reviews__dot:hover {
   background: rgb(0, 194, 128);
 }
 
@@ -1055,7 +1012,69 @@ figcaption {
   right: 5%;
 }
 
+@media screen and (max-width: 1023px) {
+  .reviews__title {
+    grid-column-start: reviews-content-start;
+    padding: 40px 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .reviews__slides-title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .reviews__text {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+}
 @media screen and (min-width: 1024px) {
+  .reviews__title {
+    grid-column-start: reviews-content-start;
+    padding: 90px 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.4em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
+    line-height: 55px;
+  }
+  .reviews__slides-title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .reviews__text {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
   .reviews__slideshow {
     margin: 0 10%;
   }
@@ -1073,6 +1092,7 @@ figcaption {
   .certificates {
     display: grid;
     grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    margin-top: 150px;
   }
   .certificates__title {
     grid-column-start: main-content-start;
@@ -1102,6 +1122,7 @@ figcaption {
   .certificates {
     display: grid;
     grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    margin-top: 70px;
   }
   .certificates__title {
     grid-column-start: main-content-start;
@@ -1109,7 +1130,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -1169,7 +1190,7 @@ figcaption {
 
 @media screen and (max-width: 1023px) {
   .customer__container {
-    grid-template-rows: 100px 540px;
+    grid-template-rows: 120px 540px;
   }
   .customer__title {
     -ms-flex-item-align: center;
@@ -1177,7 +1198,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #FFFFFF;
     font-weight: 600;
@@ -1202,7 +1223,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.6;
     color: #FFFFFF;
     font-weight: 600;
@@ -1217,7 +1238,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 2.375em;
     line-height: 1.6;
     color: #FFFFFF;
     font-weight: 600;
@@ -1234,7 +1255,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 1.6;
     color: #FFFFFF;
     font-weight: 600;
@@ -1856,28 +1877,6 @@ footer {
   font-weight: 500;
 }
 
-.call-to-action__whatsapp-button {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #FFFFFF;
-  font-weight: 500;
-  background-color: #F93264;
-}
-
-.call-to-action__telegram-button {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #3D3D3D;
-  font-weight: 500;
-  background-color: #FFFFFF;
-}
-
 .call-to-action__telegram-button:hover,
 .call-to-action__whatsapp-button:hover {
   background-color: #00213C;
@@ -1897,7 +1896,7 @@ footer {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 1.6;
     color: #FFFFFF;
     font-weight: 600;
@@ -1907,7 +1906,7 @@ footer {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.6;
     color: #FFFFFF;
     font-weight: 400;
@@ -1919,6 +1918,26 @@ footer {
             flex-direction: column;
     gap: 16px;
     margin-top: 40px;
+  }
+  .call-to-action__whatsapp-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: #F93264;
+  }
+  .call-to-action__telegram-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 500;
+    background-color: #FFFFFF;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1943,6 +1962,26 @@ footer {
   }
   .call-to-action__buttons {
     margin-top: 84px;
+  }
+  .call-to-action__whatsapp-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: #F93264;
+  }
+  .call-to-action__telegram-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 500;
+    background-color: #FFFFFF;
   }
 }
 /*html {

@@ -33,12 +33,12 @@
 @media screen and (max-width: 1023px) {
 
     .customer__container {
-        grid-template-rows: 100px 540px;
+        grid-template-rows: 120px 540px;
     }
 
     .customer__title {
         align-self: center;
-        @include font-style-Jost(16px, #FFFFFF);
+        @include font-style-Jost(1.6em, #FFFFFF);
         font-weight: 600;
     }
 
@@ -57,7 +57,7 @@
 
     .customer__text {
         margin-top: 10px;
-        @include font-style-Jost(14px, #FFFFFF);
+        @include font-style-Jost(1em, #FFFFFF);
         font-weight: 600;
     }
 }
@@ -70,7 +70,7 @@
 
     .customer__title {
         margin-top: 90px;
-        @include font-style-Jost(38px, #FFFFFF);
+        @include font-style-Jost(2.375em, #FFFFFF);
         font-weight: 600;
     }
 
@@ -84,7 +84,7 @@
 
     .customer__text {
         margin-top: 50px;
-        @include font-style-Jost(40px, #FFFFFF);
+        @include font-style-Jost(2.5em, #FFFFFF);
         font-weight: 600;
     }
 }

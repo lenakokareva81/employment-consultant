@@ -35,19 +35,6 @@
     font-weight: 500;
 }
 
-.call-to-action__whatsapp-button {
-    @include font-style-Jost(20px, #FFFFFF);
-    font-weight: 500;
-    background-color: #F93264;
-}
-
-.call-to-action__telegram-button {
-    @include font-style-Jost(20px, #3D3D3D);
-    font-weight: 500;
-    background-color: #FFFFFF;
-    // color: #3D3D3D;
-}
-
 .call-to-action__telegram-button:hover,
 .call-to-action__whatsapp-button:hover {
     background-color: #00213C;
@@ -64,13 +51,13 @@
     }
 
     .call-to-action__title {
-        @include font-style-Jost(16px, #FFFFFF);
+        @include font-style-Jost(1.2em, #FFFFFF);
         font-weight: 600;
     }
 
     .call-to-action__paragraph {
         margin-top: 10px;
-        @include font-style-Jost(14px, #FFFFFF);
+        @include font-style-Jost(1em, #FFFFFF);
         font-weight: 400;
     }
 
@@ -78,6 +65,19 @@
         flex-direction: column;
         gap: 16px;
         margin-top: 40px;
+    }
+
+    .call-to-action__whatsapp-button {
+        @include font-style-Jost(1em, #FFFFFF);
+        font-weight: 500;
+        background-color: #F93264;
+    }
+
+    .call-to-action__telegram-button {
+        @include font-style-Jost(1em, #3D3D3D);
+        font-weight: 500;
+        background-color: #FFFFFF;
+        // color: #3D3D3D;
     }
 }
 
@@ -95,5 +95,18 @@
 
     .call-to-action__buttons {
         margin-top: 84px;
+    }
+
+    .call-to-action__whatsapp-button {
+        @include font-style-Jost(1.25em, #FFFFFF);
+        font-weight: 500;
+        background-color: #F93264;
+    }
+
+    .call-to-action__telegram-button {
+        @include font-style-Jost(1.25em, #3D3D3D);
+        font-weight: 500;
+        background-color: #FFFFFF;
+        // color: #3D3D3D;
     }
 }
