@@ -19,6 +19,7 @@ h2 {
 .header {
   min-height: 70vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/img/header/header-mobile.png);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header-mobile.png);
   background-size: cover;
   padding: 10%;
@@ -97,6 +98,7 @@ h2 {
 .action__service:hover {
   background: #00213C;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -216,6 +218,7 @@ h2 {
 @media screen and (min-width: 1024px) {
   .header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/img/header/header.png);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/img/header/header.png);
     padding: 60px 200px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -705,6 +708,7 @@ figcaption {
 .advicesformats__link-btn:hover {
   background-color: #00213C;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -981,6 +985,7 @@ figcaption {
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -1279,6 +1284,7 @@ footer {
 .footer-first a:hover {
   color: #F93264;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1334,6 +1340,7 @@ footer {
   margin-top: -28px;
   background: #FFFFFF;
   -webkit-transform: rotate(16.72deg);
+      -ms-transform: rotate(16.72deg);
           transform: rotate(16.72deg);
 }
 
@@ -1351,11 +1358,13 @@ footer {
 
 .fa-whatsapp:hover {
   -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
 .fa-telegram:hover {
   -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
@@ -1391,6 +1400,7 @@ footer {
 .footer-second a:hover {
   color: #F93264;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1481,6 +1491,7 @@ footer {
 .link:hover {
   background-color: #00213C;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1881,6 +1892,7 @@ footer {
 .call-to-action__whatsapp-button:hover {
   background-color: #00213C;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1994,4 +2006,4 @@ footer {
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-}/*# sourceMappingURL=app.css.map */
+}
