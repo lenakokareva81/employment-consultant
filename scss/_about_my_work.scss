@@ -1,14 +1,14 @@
 @media screen and (max-width: 1023px) {
     .work {
         display: grid;
-        grid-template-rows: 70px 1fr;
+        grid-template-rows: 120px 1fr;
         grid-template-columns: 10.4vw [work-content-start] 1fr [work-content-end] 10.4vw;
     }
 
     .work__title {
         grid-column-start: work-content-start;
         align-self: center;
-        @include font-style-Jost(16px, #3D3D3D);
+        @include font-style-Jost(1.6em, #3D3D3D);
         font-weight: 600;
     }
 
@@ -32,19 +32,19 @@
 
     .work__circle-1 {
         width: 90%;
-        max-width: 120px;
+        max-width: 80px;
     }
 
     .work__circle-2,
     .work__circle-3,
     .work__circle-4 {
         width: 73%;
-        max-width: 100px;
+        max-width: 60px;
     }
 
     .work__circle-5 {
         width: 100%;
-        max-width: 200px;
+        max-width: 120px;
     }
 
     .work__name {
@@ -52,7 +52,7 @@
         grid-column-end: work-content-end;
         align-self: center;
         padding-left: 5px;
-        @include font-style-Jost(14px, #3D3D3D);
+        @include font-style-Jost(1em, #3D3D3D);
         font-weight: 500;
     }
 
@@ -64,7 +64,7 @@
         grid-column-start: work-text-start;
         grid-column-end: work-content-end;
         padding: 15px 10px;
-        @include font-style-Jost(11px, #3D3D3D);
+        @include font-style-Jost(0.9em, #3D3D3D);
         font-weight: 400;
     }
 
@@ -102,7 +102,7 @@
     .work__title {
         grid-column-start: work-content-start;
         align-self: center;
-        @include font-style-Jost(38px, #3D3D3D);
+        @include font-style-Jost(2.375em, #3D3D3D);
         font-weight: 600;
     }
 
@@ -116,7 +116,7 @@
     .work__point-a {
         grid-row-start: apply-name-start;
         grid-column-start: work-right-start;
-        @include font-style-Jost(48px, #4DE1B2);
+        @include font-style-Jost(3em, #4DE1B2);
         font-weight: 600;
     }
 
@@ -126,13 +126,13 @@
     }
 
     .work__name {
-        @include font-style-Jost(32px, #3D3D3D);
+        @include font-style-Jost(2em, #3D3D3D);
         font-weight: 500;
     }
 
     .work__text {
         padding-bottom: 100px;
-        @include font-style-Jost(24px, #3D3D3D);
+        @include font-style-Jost(1.5em, #3D3D3D);
         font-weight: 400;
     }
 

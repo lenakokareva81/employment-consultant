@@ -1,5 +1,10 @@
 /* advices_formats */
 
+.advicesformats__link-btn:hover {
+    background-color: #00213C;
+    transition: all 0.3s ease;
+}
+
 @media screen and (min-width: 1024px) {
 
     .advicesformats {
@@ -11,7 +16,7 @@
         grid-column-start: main-content-start;
         display: grid;
         grid-template-areas: "first second"
-                             "third fourth";
+            "third fourth";
         gap: 100px;
         margin-bottom: 200px;
         min-height: max-content;
@@ -24,7 +29,7 @@
         font-weight: 600;
     }
 
-    .advicesformats__subtitle {        
+    .advicesformats__subtitle {
         padding: 10px;
         @include font-style-Jost(30px, #3D3D3D);
         font-weight: 600;
@@ -68,21 +73,17 @@
     .advicesformats__link-btn {
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         width: 187px;
         height: 43px;
         margin-top: 110px;
         margin-bottom: 30px;
         @include font-style-Jost(20px, #ffffff);
-        font-weight: 500; 
-        text-decoration: none; 
+        font-weight: 500;
+        text-decoration: none;
         cursor: pointer;
         background-color: #F93264;
-        border: none;                                
-    }
-
-    .advicesformats__link-btn:hover {
-        background-color: #FA3465B2;
+        border: none;
     }
 
     .advicesformats__link-btn:active {
@@ -95,15 +96,16 @@
     .advicesformats {
         display: grid;
         grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+        margin-top: 60px;
     }
 
     .advicesformats__container {
         grid-column-start: main-content-start;
         display: grid;
         grid-template-areas: "first"
-                             "second"
-                             "third"
-                             "fourth";
+            "second"
+            "third"
+            "fourth";
         gap: 100px;
         margin-bottom: 200px;
         min-height: max-content;
@@ -112,13 +114,13 @@
     .advicesformats__title {
         grid-column-start: main-content-start;
         padding-bottom: 50px;
-        @include font-style-Jost(38px, #3D3D3D);
+        @include font-style-Jost(1.6em, #3D3D3D);
         font-weight: 600;
     }
 
-    .advicesformats__subtitle {        
+    .advicesformats__subtitle {
         padding: 10px;
-        @include font-style-Jost(30px, #3D3D3D);
+        @include font-style-Jost(1.2em, #3D3D3D);
         font-weight: 600;
     }
 
@@ -127,7 +129,7 @@
     }
 
     .advicesformats__text {
-        @include font-style-Jost(20px, #3D3D3D);
+        @include font-style-Jost(0.8em, #3D3D3D);
         font-weight: 400;
     }
 
@@ -160,21 +162,17 @@
     .advicesformats__link-btn {
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         width: 187px;
         height: 43px;
-        margin-top: 110px;
+        margin-top: 45px;
         margin-bottom: 30px;
         @include font-style-Jost(20px, #ffffff);
-        font-weight: 500; 
-        text-decoration: none; 
+        font-weight: 500;
+        text-decoration: none;
         cursor: pointer;
         background-color: #F93264;
-        border: none;                                
-    }
-
-    .advicesformats__link-btn:hover {
-        background-color: #FA3465B2;
+        border: none;
     }
 
     .advicesformats__link-btn:active {

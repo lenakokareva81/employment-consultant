@@ -96,6 +96,8 @@ h2 {
 .navigation__connection:hover,
 .action__service:hover {
   background: #00213C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navigation__connection {
@@ -279,30 +281,10 @@ h2 {
     border: none;
   }
 }
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  color: #000000;
-  font-weight: 600;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #000000;
-  font-weight: 100;
-}
-
 figcaption {
-  font-family: "Roboto", sans-serif;
+  font-family: "Jost";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 0.8rem;
   line-height: 1.6;
   color: grey;
@@ -318,7 +300,6 @@ figcaption {
 }
 
 .about-me__block {
-  font-family: "Open Sans";
   min-height: -webkit-max-content;
   min-height: -moz-max-content;
   min-height: max-content;
@@ -334,16 +315,38 @@ figcaption {
 
 @media screen and (min-width: 1024px) {
   .about-me__block {
-    grid-template-columns: 200px [main-content-start] 1fr [main-content-end] 200px;
+    grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
     margin: 3% 0 10% 0;
   }
   .second-article__title {
     margin-bottom: 7%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.375em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
   }
   .about-me__title {
-    display: grid;
     grid-column-start: main-content-start;
     margin-bottom: 3%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.375em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
+  }
+  .article__text {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 400;
   }
   .about-me__container {
     display: grid;
@@ -383,16 +386,37 @@ figcaption {
 }
 @media screen and (max-width: 1023px) {
   .about-me__block {
-    padding: 5% 10% 10% 10%;
+    padding: 5% 10.4vw 10% 10.4vw;
   }
   .second-article__title {
     margin-bottom: 3%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
   }
   .about-me__title {
-    display: grid;
     grid-column-start: main-content-start;
     margin-bottom: 3%;
-    padding: 0 15vw 0 12vw;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
+  }
+  .article__text {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 400;
   }
   .about-me__container {
     display: grid;
@@ -405,7 +429,6 @@ figcaption {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 1vh;
-    padding: 0 15vw 0 12vw;
   }
   .about-me__picture-container {
     grid-area: picture;
@@ -426,7 +449,7 @@ figcaption {
 @media screen and (max-width: 1023px) {
   .work {
     display: grid;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 120px 1fr;
     grid-template-columns: 10.4vw [work-content-start] 1fr [work-content-end] 10.4vw;
   }
   .work__title {
@@ -435,7 +458,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -458,17 +481,17 @@ figcaption {
   }
   .work__circle-1 {
     width: 90%;
-    max-width: 120px;
+    max-width: 80px;
   }
   .work__circle-2,
 .work__circle-3,
 .work__circle-4 {
     width: 73%;
-    max-width: 100px;
+    max-width: 60px;
   }
   .work__circle-5 {
     width: 100%;
-    max-width: 200px;
+    max-width: 120px;
   }
   .work__name {
     grid-column-start: work-name-start;
@@ -478,7 +501,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 500;
@@ -493,7 +516,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 0.9em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -530,7 +553,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 2.375em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -548,7 +571,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 3em;
     line-height: 1.6;
     color: #4DE1B2;
     font-weight: 600;
@@ -562,7 +585,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 500;
@@ -572,7 +595,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -679,6 +702,12 @@ figcaption {
   }
 }
 /* advices_formats */
+.advicesformats__link-btn:hover {
+  background-color: #00213C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 @media screen and (min-width: 1024px) {
   .advicesformats {
     display: grid;
@@ -775,9 +804,6 @@ figcaption {
     background-color: #F93264;
     border: none;
   }
-  .advicesformats__link-btn:hover {
-    background-color: rgba(250, 52, 101, 0.6980392157);
-  }
   .advicesformats__link-btn:active {
     -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
@@ -787,6 +813,7 @@ figcaption {
   .advicesformats {
     display: grid;
     grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    margin-top: 60px;
   }
   .advicesformats__container {
     grid-column-start: main-content-start;
@@ -804,7 +831,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -814,7 +841,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1.2em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -826,7 +853,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 0.8em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 400;
@@ -865,7 +892,7 @@ figcaption {
             justify-content: center;
     width: 187px;
     height: 43px;
-    margin-top: 110px;
+    margin-top: 45px;
     margin-bottom: 30px;
     font-family: "Jost";
     font-style: normal;
@@ -879,9 +906,6 @@ figcaption {
     background-color: #F93264;
     border: none;
   }
-  .advicesformats__link-btn:hover {
-    background-color: rgba(250, 52, 101, 0.6980392157);
-  }
   .advicesformats__link-btn:active {
     -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
@@ -892,18 +916,6 @@ figcaption {
   position: relative;
   display: grid;
   grid-template-columns: 10.4vw [reviews-content-start] 1fr [reviews-content-end] 10.4vw;
-}
-
-.reviews__title {
-  grid-column-start: reviews-content-start;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4em;
-  line-height: 1.6;
-  color: #3D3D3D;
-  font-weight: 600;
-  line-height: 55px;
 }
 
 .reviews__slideshow {
@@ -945,12 +957,6 @@ figcaption {
 }
 
 .reviews__slides-title {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.6em;
-  line-height: 1.6;
-  color: #fff;
   grid-area: reviews__slides-title;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,12 +968,6 @@ figcaption {
 }
 
 .reviews__text {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #fff;
   grid-area: reviews__text;
   margin: 35px;
 }
@@ -984,7 +984,8 @@ figcaption {
   transition: background-color 0.6s ease;
 }
 
-.active, .reviews__dot:hover {
+.active,
+.reviews__dot:hover {
   background: rgb(0, 194, 128);
 }
 
@@ -1011,7 +1012,69 @@ figcaption {
   right: 5%;
 }
 
+@media screen and (max-width: 1023px) {
+  .reviews__title {
+    grid-column-start: reviews-content-start;
+    padding: 40px 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .reviews__slides-title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .reviews__text {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+}
 @media screen and (min-width: 1024px) {
+  .reviews__title {
+    grid-column-start: reviews-content-start;
+    padding: 90px 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.4em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 600;
+    line-height: 55px;
+  }
+  .reviews__slides-title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .reviews__text {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
   .reviews__slideshow {
     margin: 0 10%;
   }
@@ -1029,6 +1092,7 @@ figcaption {
   .certificates {
     display: grid;
     grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    margin-top: 150px;
   }
   .certificates__title {
     grid-column-start: main-content-start;
@@ -1058,6 +1122,7 @@ figcaption {
   .certificates {
     display: grid;
     grid-template-columns: 10.4vw [main-content-start] 1fr [main-content-end] 10.4vw;
+    margin-top: 70px;
   }
   .certificates__title {
     grid-column-start: main-content-start;
@@ -1065,7 +1130,7 @@ figcaption {
     font-family: "Jost";
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 1.6em;
     line-height: 1.6;
     color: #3D3D3D;
     font-weight: 600;
@@ -1083,53 +1148,119 @@ figcaption {
     height: 100%;
   }
 }
-h2 {
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
+/* For whom are my services */
+.customer__container {
+  display: grid;
+  grid-template-columns: 10.4vw [customer-content-start] 1fr 10.4vw;
 }
 
 .customer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "customer__title customer__title customer__title" "customer__icon-1 customer__icon-2  customer__icon-3";
-  min-height: 70vh;
-  padding: 10%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 225, 178, 0.81))), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
-  background-image: linear-gradient(180deg, rgba(77, 225, 178, 0.81)), url(/assets/img/customer/xavier-s-632JwD7OI-4-unsplash\ 1.png);
+  background-image: url("../assets/img/customer/customer-bg.png");
   background-repeat: no-repeat;
-  height: 65em;
+  background-size: cover;
 }
 
-.customer__title {
-  grid-area: customer__title;
-  font-size: 2.4em;
-  color: #FFFFFF;
+.customer__container {
+  background-color: rgba(77, 225, 178, 0.81);
 }
 
-.customer__icon-1 {
-  grid-area: customer__icon-1;
-  justify-self: center;
+.customer__title,
+.customer__content {
+  grid-column-start: customer-content-start;
 }
 
-.customer__icon-2 {
-  grid-area: customer__icon-2;
-  justify-self: center;
+.customer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.customer__icon-3 {
-  grid-area: customer__icon-3;
-  justify-self: center;
+.customer__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.customer__icons {
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 2.5em;
-  color: #FFFFFF;
-  text-align: center;
+@media screen and (max-width: 1023px) {
+  .customer__container {
+    grid-template-rows: 120px 540px;
+  }
+  .customer__title {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .customer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customer__type {
+    margin-bottom: 65px;
+  }
+  .customer__img {
+    width: 70px;
+  }
+  .customer__text {
+    margin-top: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
 }
-
+@media screen and (min-width: 1024px) {
+  .customer__container {
+    grid-template-rows: 300px 600px;
+  }
+  .customer__title {
+    margin-top: 90px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.375em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .customer__content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .customer__img {
+    width: 190px;
+  }
+  .customer__text {
+    margin-top: 50px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+}
 footer {
   margin-top: 10%;
 }
@@ -1700,7 +1831,6 @@ footer {
   background-image: url("../assets/img/call-to-action-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 16.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1716,20 +1846,17 @@ footer {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: "Jost";
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .call-to-action__title {
-  color: #FFFFFF;
   margin: 0;
   text-align: center;
-  font-weight: 600;
 }
 
 .call-to-action__paragraph {
   text-align: center;
-  color: #FFFFFF;
-  font-weight: 400;
 }
 
 .call-to-action__buttons {
@@ -1741,7 +1868,6 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 2.5em;
-  margin-top: 30px;
 }
 
 .call-to-action__button {
@@ -1749,16 +1875,6 @@ footer {
   text-decoration: none;
   padding: 10px;
   font-weight: 500;
-}
-
-.call-to-action__whatsapp-button {
-  background-color: #F93264;
-  color: #FFFFFF;
-}
-
-.call-to-action__telegram-button {
-  background-color: #FFFFFF;
-  color: #3D3D3D;
 }
 
 .call-to-action__telegram-button:hover,
@@ -1772,16 +1888,100 @@ footer {
   color: #FFFFFF;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .call-to-action {
-    height: 20em;
+    padding: 70px 10.4vw;
+  }
+  .call-to-action__title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .call-to-action__paragraph {
+    margin-top: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
   }
   .call-to-action__buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5px;
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .call-to-action__whatsapp-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: #F93264;
+  }
+  .call-to-action__telegram-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 500;
+    background-color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .call-to-action__title {
+    width: 885px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .call-to-action__paragraph {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+  .call-to-action__buttons {
+    margin-top: 84px;
+  }
+  .call-to-action__whatsapp-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: #F93264;
+  }
+  .call-to-action__telegram-button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #3D3D3D;
+    font-weight: 500;
+    background-color: #FFFFFF;
   }
 }
 /*html {
